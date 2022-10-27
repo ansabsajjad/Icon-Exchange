@@ -12,10 +12,10 @@ import Logout from "./Logout.cy"
 
 describe("let's Automate Fortra.", function(){
     Super_Admin_Login()
-    // SA_Properties()
-    // Add_Brokerage_Firm()
-    // Edit_Brokerage_Firm()
-    // Deactivate_BF()
-    // Activate_BF()
+     SA_Properties()
+    Add_Brokerage_Firm()
+    Edit_Brokerage_Firm()
+    Deactivate_BF()
+    Activate_BF()
     Logout()
 })
