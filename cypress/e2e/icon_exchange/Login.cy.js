@@ -8,9 +8,20 @@ function Icon_Exchange_Login() {
 
   it("1- Visit to the URL.",function(){
     Icon_Exchange_URL()
-    // cy.url().should('include', '/commands/actions')
+   
   })
-/////////////////////////////////////
+
+
+  it('2- Logo should be present.', () => {
+    cy.get('.logo').should('be.visible')
+      
+  });
+
+  it('3- Main image should be present.', () => {
+    cy.wait(1000)
+    cy.get('.login-bg').should('be.visible')
+  });
+  
   it('2- Enter Correct Email.', () => {
     cy.wait(2000);
     cy.get(':nth-child(1) > .form-group > .form-controls > input').clear().type(Super_Admin_data.Correct_Email, {delay: 100})
@@ -27,52 +38,59 @@ it('3- Enter Wrong password.', () => {
 
 it('4- Click on Sign In Button.', () => {
     cy.get('.btn').click()
-    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Incorrect email or password.')
     
 });
 
-////////////////////////////////
-it('5- Enter wrong Email.', () => {
+it('5- Verifying the Toast message', () => {
+    cy.wait(1000);
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Incorrect email or password.')
+});
+
+it('6- Enter wrong Email.', () => {
     cy.wait(2000);
     cy.get(':nth-child(1) > .form-group > .form-controls > input').clear().type(Super_Admin_data.wrong_Email, {delay: 100})
     expect(true).to.equal(true)
    
 });
 
-it('6- Enter Correct Password.', () => {
+it('7- Enter Correct Password.', () => {
     cy.get(':nth-child(2) > :nth-child(1) > .form-controls > input').clear().type(Super_Admin_data.Correct_Password , {delay: 100})
     expect(true).to.equal(true)
 
 });
 
-it('7- Click on Sign In Button.', () => {
+it('8- Click on Sign In Button.', () => {
     cy.get('.btn').click()
     expect(true).to.equal(true)
-    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Incorrect email or password.')
 
 });
 
+it('9- Verifying the Toast message', () => {
+    cy.wait(1000);
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Incorrect email or password.')
+});
 
-it('8- Enter Correct Email.', () => {
+
+it('10- Enter Correct Email.', () => {
     cy.wait(2000);
     cy.get(':nth-child(1) > .form-group > .form-controls > input').clear().type(Super_Admin_data.Correct_Email, {delay: 100})
     expect(true).to.equal(true)
    
 });
 
-it('9- Enter Correct Password.', () => {
+it('11- Enter Correct Password.', () => {
     cy.get(':nth-child(2) > :nth-child(1) > .form-controls > input').clear().type(Super_Admin_data.Correct_Password , {delay: 100})
     expect(true).to.equal(true)
 
 });
 
-it('10- Click on Sign In Button.', () => {
+it('12- Click on Sign In Button.', () => {
     cy.get('.btn').click()
     expect(true).to.equal(true)
 });
 
-it('11- Verifying the Toast message => Login Successful.', () => {
-    cy.wait(2000);
+it('13- Verifying the Toast message => Login Successful.', () => {
+    cy.wait(1000);
     cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Login Successful')
 });
 

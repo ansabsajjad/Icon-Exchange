@@ -85,9 +85,10 @@ it('F-12 Enter Confirm Password.', () => {
 
 
 it('F-13 Click on Created Button.', () => {
-    cy.get('[type="submit"]').click().
-    expect(true).to.equal(true) 
-    
+    cy.get('[type="submit"]').click()
+cy.wait(1000)
+    expect(true).to.equal(true)
+ 
 });
 
 it('F-14 Verifying the Toast message.', () => {
