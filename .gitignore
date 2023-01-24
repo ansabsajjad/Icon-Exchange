@@ -2,3 +2,6 @@
 /node_modules
 package-lock.json
 cypress.config.js
+/cypress/fixtures/Fortra Data
+/cypress\fixtures\Fortra Credentials
+/cypress\e2e\Super Admin
