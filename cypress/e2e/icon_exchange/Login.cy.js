@@ -21,7 +21,7 @@ function Icon_Exchange_Login() {
     cy.wait(1000)
     cy.get('.login-bg').should('be.visible')
   });
-  
+
   it('2- Enter Correct Email.', () => {
     cy.wait(2000);
     cy.get(':nth-child(1) > .form-group > .form-controls > input').clear().type(Super_Admin_data.Correct_Email, {delay: 100})
@@ -44,6 +44,7 @@ it('4- Click on Sign In Button.', () => {
 it('5- Verifying the Toast message', () => {
     cy.wait(1000);
     cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Incorrect email or password.')
+    
 });
 
 it('6- Enter wrong Email.', () => {
