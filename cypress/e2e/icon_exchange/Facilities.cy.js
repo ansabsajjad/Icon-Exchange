@@ -86,7 +86,7 @@ it('F-12 Enter Confirm Password.', () => {
 
 it('F-13 Click on Created Button.', () => {
     cy.get('[type="submit"]').click().
-    expect(true).to.equal(true)
+    expect(true).to.equal(true) 
     
 });
 

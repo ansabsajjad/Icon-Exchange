@@ -76,5 +76,5 @@ it('11- Verifying the Toast message => Login Successful.', () => {
     cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Login Successful')
 });
 
-}
+} 
 export default Icon_Exchange_Login;
