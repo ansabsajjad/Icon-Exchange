@@ -23,7 +23,7 @@ it('F3- Enter Facility Name.', () => {
 });
 
 it('F4- Enter Email.', () => {
-    cy.get(':nth-child(2) > .form-group > .form-controls > input').type("ansab" + Random_Textt() + "@troontechnologies.com")
+    cy.get(':nth-child(2) > .form-group > .form-controls > input').type("ansab+" + Random_Textt() + "@troontechnologies.com")
     expect(true).to.equal(true)
 
 });
