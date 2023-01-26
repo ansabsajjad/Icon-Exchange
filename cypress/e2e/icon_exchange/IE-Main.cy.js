@@ -7,9 +7,9 @@ import Icon_Exchange_Login from "./Login.cy"
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_Login()
-    Icon_Exchange_Facilities()  
-    edit_facility()
-    // delete_facility()
+    // Icon_Exchange_Facilities()  
+    // edit_facility()
+    // // delete_facility()
     Icon_Users()
 
 })

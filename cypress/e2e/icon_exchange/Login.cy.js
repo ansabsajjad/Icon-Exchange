@@ -93,6 +93,7 @@ it('12- Click on Sign In Button.', () => {
 it('13- Verifying the Toast message => Login Successful.', () => {
     cy.wait(1000);
     cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Login Successful')
+    cy.wait(2000)
 });
 
 } 
