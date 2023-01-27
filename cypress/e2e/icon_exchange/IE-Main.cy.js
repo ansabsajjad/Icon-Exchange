@@ -5,7 +5,8 @@ import Edit_Roles from "./Edit Role.cy"
 import Icon_Exchange_Facilities from "./Facilities.cy"
 import Icon_Users from "./icon-users.cy"
 import Icon_Exchange_Login from "./Login.cy"
-import Icon_Roles from "./Roles.cy"
+import Create_Icon_Roles from "./Roles.cy"
+
 
 describe("let's Automate Icon Exchange.", function(){
   
@@ -14,7 +15,7 @@ describe("let's Automate Icon Exchange.", function(){
     // edit_facility()
     // // delete_facility()
     // Icon_Users()
-    // Icon_Roles()
+    Create_Icon_Roles()
     // Edit_Roles()
-    Delete_Roles()
+    // Delete_Roles()
 })

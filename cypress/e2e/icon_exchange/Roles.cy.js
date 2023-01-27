@@ -1,6 +1,6 @@
 import Random_Textt from "./Random_Text";
 
-function Icon_Roles() {
+function Create_Icon_Roles() {
 
 it('R-1 Click on Roles.', () => {
     cy.get(':nth-child(5) > li > .cursor-pointer').click({force:true})
@@ -46,4 +46,4 @@ expect(true).to.equal(true)
 
 }
 
-export default Icon_Roles;
+export default Create_Icon_Roles;
