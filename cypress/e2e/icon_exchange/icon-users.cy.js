@@ -36,7 +36,7 @@ expect(true).to.equal(true)
 
 
 it('IU-6 Enter Phone Number.', () => {
-    cy.get(':nth-child(4) > .form-group > .form-controls > input').type("4567895376", {delay:150})
+    cy.get('.form-control').type("456789537", {delay:150})
 expect(true).to.equal(true)
 });
 
