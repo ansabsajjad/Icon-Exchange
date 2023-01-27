@@ -17,7 +17,7 @@ it("F2- Click on 'Add Facility' button.", () => {
 });
 
 it('F3- Enter Facility Name.', () => {
-    cy.get(':nth-child(1) > .form-group > .form-controls > input').type("XYZ " + Random_Textt(), {delay:150})
+    cy.get(':nth-child(1) > .form-group > .form-controls > input').type("ANSAB " + Random_Textt(), {delay:150})
     expect(true).to.equal(true)
 
 });

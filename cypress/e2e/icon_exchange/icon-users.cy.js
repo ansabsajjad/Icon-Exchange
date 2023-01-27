@@ -18,7 +18,7 @@ expect(true).to.equal(true)
 
 
 it('IU-3 Enter First Name.', () => {
-    cy.get(':nth-child(1) > .form-group > .form-controls > input').type("ABC  " + Random_Textt(), {delay:150})
+    cy.get(':nth-child(1) > .form-group > .form-controls > input').type("ANSAB  " + Random_Textt(), {delay:150})
 expect(true).to.equal(true)
 });
 
