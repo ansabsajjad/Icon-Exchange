@@ -35,7 +35,7 @@ it('F-5 Enter Facility Contracted By.', () => {
 });
 
 it('F6- Add Number.', () => {
-    cy.get(':nth-child(4) > .form-group > .form-controls > input').type("4567895376")
+    cy.get('.form-control').type("4567895376")
     expect(true).to.equal(true)
 
 });
