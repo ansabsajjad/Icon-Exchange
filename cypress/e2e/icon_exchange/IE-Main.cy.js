@@ -2,7 +2,7 @@ import delete_facility from "./Delete Facility.cy"
 import Delete_Roles from "./Delete_Roles.cy"
 import edit_facility from "./Edit Facility.cy"
 import Edit_Roles from "./Edit Role.cy"
-import Icon_Exchange_Facilities from "./Facilities.cy"
+import Add_Icon_Exchange_Facilities from "./Facilities.cy"
 import Icon_Users from "./icon-users.cy"
 import Icon_Exchange_Login from "./Login.cy"
 import Create_Icon_Roles from "./Roles.cy"
@@ -10,12 +10,13 @@ import Create_Icon_Roles from "./Roles.cy"
 
 describe("let's Automate Icon Exchange.", function(){
   
-    Icon_Exchange_Login()
-    // Icon_Exchange_Facilities()  
+    Icon_Exchange_Login() 
+    Add_Icon_Exchange_Facilities() 
     // edit_facility()
-    // // delete_facility()
+    // delete_facility()
+    
     // Icon_Users()
-    Create_Icon_Roles()
+    // Create_Icon_Roles()
     // Edit_Roles()
     // Delete_Roles()
 })

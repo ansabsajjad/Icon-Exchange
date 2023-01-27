@@ -1,6 +1,6 @@
 import Random_Textt from "./Random_Text";
 
-function Icon_Exchange_Facilities() {
+function Add_Icon_Exchange_Facilities() {
 
 
 it('F1- Click on the Facilities.', () => {
@@ -107,4 +107,4 @@ it('', () => {
 
 
 }
-export default Icon_Exchange_Facilities;
+export default Add_Icon_Exchange_Facilities;
