@@ -6,11 +6,8 @@ import Super_Admin_data from "../../fixtures/Icon Exchange Credentials/Login_Cre
 function Icon_Exchange_Login() {
    
 
-  it("1- Visit to the URL.",function(){
     Icon_Exchange_URL()
-   
-  })
-
+ 
 
   it('2- Logo should be present.', () => {
     cy.get('.logo').should('be.visible')
