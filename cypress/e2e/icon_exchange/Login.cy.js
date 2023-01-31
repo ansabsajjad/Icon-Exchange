@@ -6,7 +6,7 @@ import Super_Admin_data from "../../fixtures/Icon Exchange Credentials/Login_Cre
 function Icon_Exchange_Login() {
    
 
-    Icon_Exchange_URL()
+    // Icon_Exchange_URL()
  
 
   it('2- Logo should be present.', () => {

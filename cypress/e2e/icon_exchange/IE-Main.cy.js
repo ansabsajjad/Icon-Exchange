@@ -15,8 +15,8 @@ import Create_Icon_Roles from "./Roles.cy"
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()
-    // Icon_Exchange_Login() 
-    // Add_Icon_Exchange_Facilities() 
+    Icon_Exchange_Login() 
+    Add_Icon_Exchange_Facilities() 
     // edit_facility()
     // delete_facility()
     // Icon_Users()
@@ -25,5 +25,5 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Roles()
     // Delete_Roles()
     // Provider_Signup()
-    Provider_SignIN()
+    // Provider_SignIN()
 })
