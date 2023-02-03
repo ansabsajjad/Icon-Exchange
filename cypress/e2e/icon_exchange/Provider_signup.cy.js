@@ -37,6 +37,10 @@ it('7- Agree with terms and condition.', () => {
     cy.get('.btn').click({force: true})
     cy.wait(60000)
  });
+it('9- Go to Login page.', () => {
+    cy.visit("https://admin-dev-iconxchng.troonlab.io/login")
+});
+
 
 }
 export default Provider_Signup;

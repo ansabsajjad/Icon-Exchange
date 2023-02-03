@@ -10,15 +10,18 @@ import Icon_Exchange_Login from "./Login.cy"
 import Provider_SignIN from "./Provider_SignIn.cy"
 import Provider_Signup from "./Provider_signup.cy"
 import Create_Icon_Roles from "./Roles.cy"
+import Facility_Search from "./Search.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()
     Icon_Exchange_Login() 
-    Add_Icon_Exchange_Facilities() 
+    // Add_Icon_Exchange_Facilities() 
     // edit_facility()
     // delete_facility()
+    Facility_Search()
+
     // Icon_Users()
     // Delete_Icon_user()
     // Create_Icon_Roles()
@@ -27,3 +30,4 @@ describe("let's Automate Icon Exchange.", function(){
     // Provider_Signup()
     // Provider_SignIN()
 })
+
