@@ -89,6 +89,5 @@ it(' Clear Search filter.', () => {
 
 
 
-
 }
 export default Facility_Search;
