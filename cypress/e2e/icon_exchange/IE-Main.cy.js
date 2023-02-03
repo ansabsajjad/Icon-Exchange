@@ -23,9 +23,9 @@ describe("let's Automate Icon Exchange.", function(){
     // delete_facility()
     // Facility_Search()
 
-    Icon_Users()
+    // Icon_Users()
     // Delete_Icon_user()
-    // Icon_Users_Search()
+    Icon_Users_Search()
     // Create_Icon_Roles()
     // Edit_Roles()
     // Delete_Roles()
