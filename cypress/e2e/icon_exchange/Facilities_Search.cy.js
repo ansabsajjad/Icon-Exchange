@@ -68,6 +68,8 @@ it(' Clear Search filter.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
     cy.get('.custom-select__input-container').click().type("icon exchange").type('{enter}')
+   cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
+
     cy.wait(5000)
 
 });

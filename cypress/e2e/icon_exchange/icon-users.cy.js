@@ -47,7 +47,7 @@ expect(true).to.equal(true)
 });
 
 it('IU-8 Enter Role.', () => {
-    cy.get(':nth-child(6) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("Finance manager").type('{enter}').wait(2000)
+    cy.get(':nth-child(6) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("Icon User").type('{enter}').wait(2000)
 expect(true).to.equal(true)
 });
 it('IU-9 Enter Department.', () => {
