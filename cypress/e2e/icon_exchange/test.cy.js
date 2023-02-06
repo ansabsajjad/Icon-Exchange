@@ -69,17 +69,31 @@ it('Click on Save and continue.', () => {
     cy.get('#left-tabs-example-tabpane-3 > form > .form-footer-full > .container > .row > .col-md-8 > .btn-primary').click({force:true})
 });
 
+it('Verifying the Toast message.', () => {
+    cy.wait(2000);
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile Updated Successfully')
+    cy.wait(2000)
+});
+
 it('Add area of experties.', () => {
     cy.wait(2000)
     cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     cy.get(':nth-child(3) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
+    cy.get(':nth-child(6) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
     cy.get(':nth-child(9) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
 });
 
 it('Click on save and continue.', () => {
     cy.get('.formstyle > .form-footer-full > .container > .row > .col-md-8 > .btn-primary').click({force:true})
+    cy.wait(2000)
+});
+
+
+it('Verifying the Toast message.', () => {
+    cy.wait(2000);
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile Updated Successfully')
     cy.wait(2000)
 });
 
@@ -92,6 +106,43 @@ it('Upload Profile pcture.', () => {
     cy.get(':nth-child(1) > .accordion-collapse > .accordion-body > .formstyle > .dropzone > .global-file-style').attachFile("dummy.pdf")
      
 });
+
+it('Click on Skip for Now button.', () => {
+    cy.get('#left-tabs-example-tabpane-5 > .form-footer-full > .container > .row > .col-md-8 > .btn-text').click({force:true})
+    cy.wait(3000)
+});
+
+it('Select Incorporated Status.', () => {
+    cy.get('.radio-wrapper > :nth-child(2) > div > label.form-label').click({force:true}).wait(2000)
+});
+
+it('Are you currently associated with below mentioned companies?', () => {
+    
+  cy.get('.form-group > :nth-child(2) > div > .form-label').click({force: true})
+  cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-8 > .btn-primary').click({force: true})
+
+  cy.get('.form-group > :nth-child(1) > div > .form-label').click({force: true})
+  cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-8 > .btn-primary').click({force: true})
+ 
+});
+
+//////////////////////////////
+
+
+it('Click on Save & contiunue button.', () => {
+    cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-8 > .btn-primary').click({force:true}).wait(2000)
+});
+
+
+it('Verifying the Toast message.', () => {
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Profile Updated Successfully')
+    cy.wait(2000)
+});
+
+
+
+
+
 
 
 

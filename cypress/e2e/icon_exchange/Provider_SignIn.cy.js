@@ -55,11 +55,11 @@ it('profile upload.', () => {
 
     
 it('Upload profile image.', () => {
-    cy.wait(30000)
+    cy.wait(3000)
 
     cy.get('[data-testid="opendialog"]').click({force:true})
     const filepath11 = "a11.jpg"
-    // cy.get('[data-testid="opendialog"]').attachFile("AS_logo.png")
+    cy.get('[data-testid="opendialog"]').attachFile("AS_logo.png")
     // cy.wait(40000)
 
    

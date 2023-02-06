@@ -17,7 +17,7 @@ import Icon_Users_Search from "./Icon_User_Search.cy"
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()
-    Icon_Exchange_Login() 
+    // Icon_Exchange_Login() 
     // Add_Icon_Exchange_Facilities() 
     // edit_facility()
     // delete_facility()
@@ -25,11 +25,12 @@ describe("let's Automate Icon Exchange.", function(){
 
     // Icon_Users()
     // Delete_Icon_user()
-    Icon_Users_Search()
+    // Icon_Users_Search()
     // Create_Icon_Roles()
     // Edit_Roles()
     // Delete_Roles()
+
     // Provider_Signup()
-    // Provider_SignIN()
+    Provider_SignIN()
 })
 
