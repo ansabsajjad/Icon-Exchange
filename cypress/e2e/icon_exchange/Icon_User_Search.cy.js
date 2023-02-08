@@ -9,7 +9,7 @@ it('Search First Name.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
     cy.get('#firstName').click().type("ANSAB")
-    cy.get(':nth-child(2) > :nth-child(2) > .btn')
+    cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
     cy.wait(5000)
 
 

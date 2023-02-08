@@ -2,7 +2,7 @@ import Random_Textt from "./Random_Text";
 
 function Icon_Users() {
 
-it('IU-1 Click on Ison users.', () => {
+it('IU-1 Click on Icon users.', () => {
     cy.get(':nth-child(4) > .relative > .cursor-pointer > :nth-child(2)').click()    
     cy.wait(4000);
 expect(true).to.equal(true)
