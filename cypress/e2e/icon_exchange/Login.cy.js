@@ -84,12 +84,12 @@ it('11- Enter Correct Password.', () => {
 
 it('12- Click on Sign In Button.', () => {
     cy.get('.btn').click()
-    expect(true).to.equal(true)
 });
 
 it('13- Verifying the Toast message => Login Successful.', () => {
-    cy.wait(1000);
+    // cy.wait(1000);
     cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Login Successful')
+    expect(true).to.equal(true)
     cy.wait(2000)
 });
 
