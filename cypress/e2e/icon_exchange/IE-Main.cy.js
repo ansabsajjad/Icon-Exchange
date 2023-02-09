@@ -19,9 +19,9 @@ import Add_Provider from "./Add_Provider.cy"
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()
-    Icon_Exchange_Login() 
+    // Icon_Exchange_Login() 
     
-    Add_Provider()
+    // Add_Provider()
 
     // Add_Icon_Exchange_Facilities() 
     // edit_facility()
@@ -38,7 +38,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Roles()
     // Delete_Roles()
 
-    // Provider_Signup()
+    Provider_Signup()
     // Provider_SignIN()
 })
 

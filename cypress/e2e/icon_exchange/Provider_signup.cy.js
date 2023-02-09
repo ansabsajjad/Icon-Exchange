@@ -8,6 +8,7 @@ it('1- Click on Register Now.', () => {
 });
 
 it('2- Enter First Name.', () => {
+    cy.wait(2000)
     cy.get(':nth-child(1) > .form-group > .form-controls > input').type("ANSAB " + Random_Textt(), {delay:150})
 });
 
