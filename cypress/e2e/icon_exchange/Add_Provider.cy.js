@@ -43,11 +43,13 @@ it('1- Click on add Provider.', () => {
     });
     
     it('7- Click on Next Button.', () => {
-        cy.get('.btn').click()
+        cy.get('.btn').click({force: true})
     });
 
 it('8- Verifying the Congratulation Screen.', () => {
-    
+    cy.get('.logo').should('be.visible').wait(1000)
+    cy.get('.d-flex').should('be.visible').should('have.text','Congratulations!').wait(1000)
+    cy.get('.clr-brightgray').should('be.visible').wait(1000)
 });
 
 }
