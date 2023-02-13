@@ -192,7 +192,7 @@ it(' Clear Search filter.', () => {
  it('Search by Created At.', () => {
     cy.get('.left-icon').click({force:true})
     cy.wait(2000)
-    cy.get('.customdate').type("02/07/2023").type('{enter}').wait(2000)
+    cy.get('.customdate').type("02/13/2023").type('{enter}').wait(2000)
     cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
     cy.wait(5000)
     expect(true).to.equal(true)
