@@ -18,7 +18,7 @@ it('1- Click on add Provider.', () => {
 
    it('2- Enter First Name.', () => {
     cy.wait(2000)
-    cy.get(':nth-child(1) > .form-group > .form-controls > input').type("sdfhgkjl")
+    cy.get(':nth-child(1) > .form-group > .form-controls > input').type("ANSAB")
    });
 
     it('3- Enter Middle Name.', () => {
@@ -49,7 +49,10 @@ it('1- Click on add Provider.', () => {
 it('8- Verifying the Congratulation Screen.', () => {
     cy.get('.logo').should('be.visible').wait(1000)
     cy.get('.d-flex').should('be.visible').should('have.text','Congratulations!').wait(1000)
-    cy.get('.clr-brightgray').should('be.visible').wait(1000)
+    cy.get('.clr-brightgray').should('be.visible').wait(5000)
+});
+it("9- Click on 'Go Back to Provider Listing' button.", () => {
+    cy.get('.btn').click()
 });
 
 }

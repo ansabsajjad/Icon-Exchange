@@ -14,14 +14,16 @@ import Facility_Search from "./Facilities_Search.cy"
 import Icon_Users_Search from "./Icon_User_Search.cy"
 import Icon_Role_Search from "./Role_Search.cy"
 import Add_Provider from "./Add_Provider.cy"
+import Provider_Search from "./Provider_Search.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()
-    // Icon_Exchange_Login() 
+    Icon_Exchange_Login() 
     
     // Add_Provider()
+    Provider_Search()
 
     // Add_Icon_Exchange_Facilities() 
     // edit_facility()
@@ -38,7 +40,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Roles()
     // Delete_Roles()
 
-    Provider_Signup()
+    // Provider_Signup()
     // Provider_SignIN()
 })
 
