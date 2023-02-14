@@ -15,6 +15,7 @@ import Icon_Users_Search from "./Icon_User_Search.cy"
 import Icon_Role_Search from "./Role_Search.cy"
 import Add_Provider from "./Add_Provider.cy"
 import Provider_Search from "./Provider_Search.cy"
+import Delete_Provider from "./Delete_Provider.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
@@ -23,7 +24,8 @@ describe("let's Automate Icon Exchange.", function(){
     Icon_Exchange_Login() 
     
     // Add_Provider()
-    Provider_Search()
+    // Provider_Search()
+    Delete_Provider()
 
     // Add_Icon_Exchange_Facilities() 
     // edit_facility()
