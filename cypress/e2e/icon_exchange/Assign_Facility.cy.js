@@ -43,7 +43,7 @@ it('VP-7 Scroll.', () => {
 });
 
 it('VP-8 Click on Assign Facilities.', () => {
-    cy.get('.px-5').click()
+    cy.get('.mt-90 > .btn').click()
     cy.wait(4000)
     expect(true).to.equal(true)
 
