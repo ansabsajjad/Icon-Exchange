@@ -27,7 +27,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Add_Provider()
     // Provider_Search()
     // Delete_Provider()
-    // View_Provider()
+    // View_Provider() 
 
     // Add_Icon_Exchange_Facilities() 
     // edit_facility()
