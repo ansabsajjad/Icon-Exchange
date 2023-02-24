@@ -36,7 +36,7 @@ it('7- Agree with terms and condition.', () => {
 });
  it('8- Click on Next Button.', () => {
     cy.get('.btn').click({force: true})
-    cy.wait(60000)
+    cy.wait(30000)
  });
 it('9- Go to Login page.', () => {
     cy.visit("https://admin-dev-iconxchng.troonlab.io/login")

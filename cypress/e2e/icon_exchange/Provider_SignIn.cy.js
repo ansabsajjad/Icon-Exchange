@@ -84,10 +84,16 @@ it('F-14 Verifying the Toast message.', () => {
     cy.wait(2000)
 });
 
-it('xyzzz', () => {
-    cy.get('#countryMand > .custom-select__control > .custom-select__value-container').click({force:true}).wait(1000).type("kjfdknfd")
-    cy.wait(40000)
+it('Select country', () => {
+    // cy.get('#countryMand > .custom-select__control > .custom-select__value-container > .custom-select__input-container',{force:true}).click({force:true}).type("uganda")
+    // cy.get('#countryMand > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).invoke('val', 'Uganda');
+    // cy.get('#countryMand > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("kjhskjhkjfhs")
+    cy.get('#countryMand > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().realPress('h')
+
+cy.wait(10000)
 });
+
+
 
 // it('Click on Skip Now button for now.', () => {
 //     cy.get('#left-tabs-example-tabpane-1 > form > .form-footer-full > .container > .row > .col-md-8 > .btn-text').click()
