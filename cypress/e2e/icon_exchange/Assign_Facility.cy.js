@@ -75,7 +75,8 @@ it('VP-12 Add Area Expertise', () => {
 
 it('VP-13 Paper work submitted to Facility.', () => {
     // cy.get(':nth-child(5) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("no",{delay: 60}).type('{enter}').wait(2000)
-    cy.get(':nth-child(5) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__indicators > .custom-select__indicator > img').type("yes",{delay: 60}).type('{enter}').wait(2000)
+    // cy.get(':nth-child(5) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__indicators > .custom-select__indicator > img').type("yes",{delay: 60}).type('{enter}').wait(2000)
+    cy.get('[id="react-select-14-input"]').type("yes",{delay: 60}).type('{enter}').wait(2000)
     expect(true).to.equal(true)
 
 });
@@ -105,7 +106,7 @@ it('VP-17 Payroll Enrollment Status.', () => {
 });
 
 it('VP-18 Currently Active.', () => {
-    cy.get(':nth-child(10) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("yes").type('{enter}').wait(2000)
+    cy.get('[id="react-select-17-input"]').type("yes").type('{enter}').wait(2000)
     expect(true).to.equal(true)
 
 });
