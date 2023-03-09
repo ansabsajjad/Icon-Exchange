@@ -2,8 +2,7 @@
 function Add_Pay_Rates(){
 
     it('AP -1 Click on Settings.', () => {
-       // cy.get('[data-testid="mainmenu-324234"]').click()
-       cy.get('[data-testid="mainmenu-4"] > .float-end').click()
+    cy.get('[data-testid="mainmenu-4"] > .float-end').click()
     expect(true).to.equal(true)
     });
 
@@ -122,8 +121,8 @@ function Add_Pay_Rates(){
     });
                                                             
 
-    it('AP -', () => {
-        
+    it('AP -26 Click on Create button.', () => {
+        cy.get('[type="submit"]').click({force:true})
     });
                                                             
 

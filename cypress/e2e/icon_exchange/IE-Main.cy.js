@@ -19,6 +19,7 @@ import Delete_Provider from "./Delete_Provider.cy"
 import View_Provider from "./View_Provider.cy"
 import Assign_Facility from "./Assign_Facility.cy"
 import Add_Pay_Rates from "./Add_Pay_Rates.cy"
+import Pay_Rate_Search from "./Pay_Rate_Search.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
@@ -31,8 +32,9 @@ describe("let's Automate Icon Exchange.", function(){
     // Delete_Provider()
     // View_Provider() 
     // Assign_Facility()
-    Add_Pay_Rates()
-
+    // Add_Pay_Rates()
+    Pay_Rate_Search()
+    
     // Add_Icon_Exchange_Facilities() 
     // edit_facility()
     // delete_facility()
