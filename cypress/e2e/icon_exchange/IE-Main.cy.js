@@ -25,7 +25,7 @@ import Pay_Rate_Search from "./Pay_Rate_Search.cy"
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()
-     Icon_Exchange_Login() 
+    Icon_Exchange_Login() 
     
     // Add_Provider()
     // Provider_Search()
@@ -50,7 +50,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Roles()
     // Delete_Roles()
 
-//     Provider_Signup()
+    // Provider_Signup()
     // Provider_SignIN()
 })
 
