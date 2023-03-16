@@ -43,14 +43,15 @@ it('VP-7 Scroll.', () => {
 });
 
 it('VP-8 Click on Assign Facilities.', () => {
-    cy.get('.mt-90 > .btn').click()
+    // cy.get('.mt-90 > .btn').click()
+    cy.get('.px-5').click()
     cy.wait(4000)
     expect(true).to.equal(true)
 
 });
 
 it('VP-9 Add Facility Name', () => {
-    cy.get('.col-md-12 > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("Ummas Memorial Medical centre").type('{enter}').wait(2000)
+    cy.get('.col-md-12 > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("newyork").type('{enter}').wait(2000)
     expect(true).to.equal(true)
 
 });
@@ -69,6 +70,7 @@ it('VP-11 Provider working for.', () => {
 
 it('VP-12 Add Area Expertise', () => {
     cy.get(':nth-child(4) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("others").type('{enter}').wait(2000)
+    cy.get(':nth-child(4) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("registered Nurse").type('{enter}').wait(2000)
     expect(true).to.equal(true)
 
 });
@@ -76,7 +78,7 @@ it('VP-12 Add Area Expertise', () => {
 it('VP-13 Paper work submitted to Facility.', () => {
     // cy.get(':nth-child(5) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("no",{delay: 60}).type('{enter}').wait(2000)
     // cy.get(':nth-child(5) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__indicators > .custom-select__indicator > img').type("yes",{delay: 60}).type('{enter}').wait(2000)
-    cy.get('[id="react-select-14-input"]').type("yes",{delay: 60}).type('{enter}').wait(2000)
+    cy.get('[id="react-select-22-input"]').type("yes",{delay: 60}).type('{enter}').wait(2000)
     expect(true).to.equal(true)
 
 });
@@ -106,7 +108,7 @@ it('VP-17 Payroll Enrollment Status.', () => {
 });
 
 it('VP-18 Currently Active.', () => {
-    cy.get('[id="react-select-17-input"]').type("yes").type('{enter}').wait(2000)
+    cy.get('[id="react-select-25-input"]').type("yes").type('{enter}').wait(2000)
     expect(true).to.equal(true)
 
 });
@@ -128,8 +130,8 @@ it('VP-21 Reoppoinment Date.', () => {
 });
 
 
-it('VP-', () => {
-    
+it('VP-22 Click on Save button.', () => {
+    cy.get('[type="submit"]').click({force:true})
     expect(true).to.equal(true)
 
 });

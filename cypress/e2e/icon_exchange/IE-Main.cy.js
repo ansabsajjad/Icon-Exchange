@@ -29,11 +29,11 @@ describe("let's Automate Icon Exchange.", function(){
     
     // Add_Provider()
     // Provider_Search()
-    // Delete_Provider()
     // View_Provider() 
-    // Assign_Facility()
+    // Delete_Provider()
+    Assign_Facility()
     // Add_Pay_Rates()
-    Pay_Rate_Search()
+    // Pay_Rate_Search()
     
     // Add_Icon_Exchange_Facilities() 
     // edit_facility()
