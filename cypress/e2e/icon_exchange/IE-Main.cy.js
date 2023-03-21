@@ -20,6 +20,7 @@ import View_Provider from "./View_Provider.cy"
 import Assign_Facility from "./Assign_Facility.cy"
 import Add_Pay_Rates from "./Add_Pay_Rates.cy"
 import Pay_Rate_Search from "./Pay_Rate_Search.cy"
+import Add_Malpractice from "./Add_Malpractice.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
@@ -31,10 +32,8 @@ describe("let's Automate Icon Exchange.", function(){
     // Provider_Search()
     // View_Provider() 
     // Delete_Provider()
-    Assign_Facility()
-    // Add_Pay_Rates()
-    // Pay_Rate_Search()
-    
+    // Assign_Facility()
+ 
     // Add_Icon_Exchange_Facilities() 
     // edit_facility()
     // delete_facility()
@@ -52,5 +51,9 @@ describe("let's Automate Icon Exchange.", function(){
 
     // Provider_Signup()
     // Provider_SignIN()
+
+       // Add_Pay_Rates()
+    // Pay_Rate_Search()
+    Add_Malpractice()
 })
 
