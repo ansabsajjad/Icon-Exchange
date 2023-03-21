@@ -44,14 +44,16 @@ it('VP-7 Scroll.', () => {
 
 it('VP-8 Click on Assign Facilities.', () => {
     // cy.get('.mt-90 > .btn').click()
-    cy.get('.px-5').click()
+    // cy.get('.px-5').click()
+    cy.contains('Assign Facility').click()
     cy.wait(4000)
     expect(true).to.equal(true)
 
 });
 
 it('VP-9 Add Facility Name', () => {
-    cy.get('.col-md-12 > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("newyork").type('{enter}').wait(2000)
+    cy.get('.col-md-12 > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()//.type("nanaimo regional General Hospital").type('{enter}').wait(2000)
+    cy.get('#react-select-18-option-1').click()
     expect(true).to.equal(true)
 
 });
@@ -78,7 +80,7 @@ it('VP-12 Add Area Expertise', () => {
 it('VP-13 Paper work submitted to Facility.', () => {
     // cy.get(':nth-child(5) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("no",{delay: 60}).type('{enter}').wait(2000)
     // cy.get(':nth-child(5) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__indicators > .custom-select__indicator > img').type("yes",{delay: 60}).type('{enter}').wait(2000)
-    cy.get('[id="react-select-22-input"]').type("yes",{delay: 60}).type('{enter}').wait(2000)
+    cy.get('[id="react-select-22-input"]').type("no",{delay: 60}).type('{enter}').wait(2000)
     expect(true).to.equal(true)
 
 });
@@ -90,7 +92,8 @@ it('VP-14 Paperwork submitted date.', () => {
 });
 
 it("VP-15 Facility's approval", () => {
-    cy.get(':nth-child(7) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("approved").type('{enter}').wait(2000)
+    cy.get(':nth-child(7) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()//.type("approved").type('{enter}').wait(2000)
+    cy.get('#react-select-23-option-1').click()
     expect(true).to.equal(true)
 
 });
@@ -102,7 +105,8 @@ it('VP-16 Received Facility Approval Date.', () => {
 });
 
 it('VP-17 Payroll Enrollment Status.', () => {
-    cy.get(':nth-child(9) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("approved").type('{enter}').wait(2000)
+    cy.get(':nth-child(9) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()//.type("approved").type('{enter}').wait(2000)
+    cy.get('#react-select-24-option-1').click()
     expect(true).to.equal(true)
 
 });
