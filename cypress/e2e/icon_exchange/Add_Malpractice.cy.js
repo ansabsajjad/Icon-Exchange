@@ -41,7 +41,7 @@ function Add_Malpractice(){
 
 
     it('AM-8 Procedure Type.', () => {
-        cy.get('#procedureType > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()//.type("major Surgery").type('{enter}').wait(2000)
+        cy.get('#procedureType > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
         cy.get('#react-select-21-option-0').click()
         
     });
