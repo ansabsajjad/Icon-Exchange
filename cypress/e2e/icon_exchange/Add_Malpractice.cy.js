@@ -23,7 +23,8 @@ function Add_Malpractice(){
 
 
     it('AM-5 Select Malpractice Insurance Provider. ', () => {
-        cy.get('#malpracticeInsuranceProvider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({multiple: true}).type("sheridan").wait(2000).type('{enter}')
+        cy.get('#malpracticeInsuranceProvider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()//.type("sheridan").wait(2000).type('{enter}')
+        cy.get('#react-select-18-option-1').click()
     });
 
 
@@ -40,12 +41,15 @@ function Add_Malpractice(){
 
 
     it('AM-8 Procedure Type.', () => {
-        cy.get('#procedureType > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().type("major Surgery").type('{enter}').wait(2000)
+        cy.get('#procedureType > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()//.type("major Surgery").type('{enter}').wait(2000)
+        cy.get('#react-select-21-option-0').click()
+        
     });
 
 
     it('AM-9 Select State.', () => {
-        cy.get('#state > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().type("al").type('{enter}').wait(2000)
+        cy.get('#state > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()//.type("al").type('{enter}').wait(2000)
+        cy.get('#react-select-22-option-0').click()
     });
 
 
@@ -64,8 +68,8 @@ function Add_Malpractice(){
     });
 
 
-    it('AM- ', () => {
-        
+    it('AM-13 Click on Create button.', () => {
+        cy.get('[data-testid="createrecord"]').click()
     });
 
 
