@@ -53,7 +53,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Provider_Signup()
     // Provider_SignIN()
 
-       Add_Pay_Rates()
+    // Add_Pay_Rates()
     Pay_Rate_Search()
 //     Add_Malpractice()
 //     Malpractice_Search()
