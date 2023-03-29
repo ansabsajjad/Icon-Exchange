@@ -25,6 +25,7 @@ import Malpractice_Search from "./Malpractice_search.cy"
 import Pay_Rate_View from "./Pay_Rate_View.cy"
 import Edit_Pay_Rate from "./Edit_Pay_rate.cy"
 import Delete_Pay_Rate from "./Delete_Pay_Rate.cy"
+import Update_Malpractice from "./Update_Malpractice.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
@@ -60,10 +61,11 @@ describe("let's Automate Icon Exchange.", function(){
     // Pay_Rate_Search()
     // Pay_Rate_View()
     // Edit_Pay_Rate()
-    Delete_Pay_Rate()
+    // Delete_Pay_Rate()
 
-//     Add_Malpractice()
+    //Add_Malpractice()
     // Malpractice_Search()
+    Update_Malpractice()
 
 
 })

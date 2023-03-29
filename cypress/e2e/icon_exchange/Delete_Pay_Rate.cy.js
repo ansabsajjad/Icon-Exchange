@@ -26,7 +26,7 @@ function Delete_Pay_Rate(){
         });
 
         it('PD-6 Confirm Delete.', () => {
-            
+            cy.get('.modal-body > .row > :nth-child(2) > .btn').click({force: true})
         });
 
 
