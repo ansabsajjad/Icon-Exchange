@@ -51,7 +51,7 @@ it('UM-9 Update Procedure Type.', () => {
 });
 
 
-it.skip('UM-10 Click on Update button.', () => {
+it('UM-10 Click on Update button.', () => {
     cy.get('[data-testid="handleGlobalMalpracticeUpdate"]').click({force: true})
 });
 

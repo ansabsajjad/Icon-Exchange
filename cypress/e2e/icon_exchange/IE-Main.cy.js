@@ -65,7 +65,7 @@ describe("let's Automate Icon Exchange.", function(){
 
     //Add_Malpractice()
     // Malpractice_Search()
-    Update_Malpractice()
+    // Update_Malpractice()
 
 
 })
