@@ -18,13 +18,14 @@ function Add_Pay_Rates(){
     });
 
     it('AP -4 Select Provider Name.', () => {
-        cy.get('.custom-select__input-container').type("ANSAB").type('{enter}').wait(2000)
+        cy.get('.custom-select__input-container').click({force:true}).wait(2000)
+        cy.get('#react-select-14-option-4').click({force:true}).wait(4000)
         expect(true).to.equal(true)
     });
 
 
     it('AP -5 Select Facility.', () => {
-        cy.get('tbody > tr > :nth-child(1)').click().wait(2000)
+        cy.get('tbody > :nth-child(1) > :nth-child(1)').click().wait(2000)
     });
 
     it('AP -6 Enter Rate Start Date.', () => {
