@@ -20,11 +20,14 @@ function Delete_Pay_Rate(){
         });
 
 
-        it('PD-5 Click on View button.', () => {
+        it('PD-5 Click on Delete button.', () => {
             cy.contains("Delete").click({force: true})
             cy.wait(3000)
         });
 
+        it('PD-6 Confirm Delete.', () => {
+            
+        });
 
 
 
