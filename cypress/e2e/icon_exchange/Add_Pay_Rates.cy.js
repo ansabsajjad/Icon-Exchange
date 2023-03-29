@@ -18,7 +18,7 @@ function Add_Pay_Rates(){
     });
 
     it('AP -4 Select Provider Name.', () => {
-        cy.get('.custom-select__input-container').type("ANSAB abc WBlvF").type('{enter}').wait(2000)
+        cy.get('.custom-select__input-container').type("ANSAB").type('{enter}').wait(2000)
         expect(true).to.equal(true)
     });
 

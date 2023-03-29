@@ -38,7 +38,7 @@ it('Vp-6 Click on Facilities.', () => {
 });
 
 it('VP-7 Scroll.', () => {
-    cy.scrollTo("bottom").wait(2000)
+    cy.scrollTo("bottom",{ensureScrollable: false}).wait(2000)
     cy.scrollTo("top").wait(2000)    
 });
 

@@ -40,8 +40,8 @@ describe("let's Automate Icon Exchange.", function(){
     // delete_facility()
     // Facility_Search()
 
-    // Icon_Users()
     // Delete_Icon_user()
+    // Icon_Users()
     // Icon_Users_Search()
 
 
@@ -53,9 +53,9 @@ describe("let's Automate Icon Exchange.", function(){
     // Provider_Signup()
     // Provider_SignIN()
 
-       // Add_Pay_Rates()
+    //    Add_Pay_Rates()
     // Pay_Rate_Search()
-    // Add_Malpractice()
+    Add_Malpractice()
     Malpractice_Search()
 })
 
