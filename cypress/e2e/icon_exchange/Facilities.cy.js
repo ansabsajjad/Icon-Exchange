@@ -10,7 +10,7 @@ it('F1- Click on the Facilities.', () => {
 });
 
 it("F2- Click on 'Add Facility' button.", () => {
-    cy.get('.px-5').should('be.visible').click()
+    cy.get('[data-testid="assign-facility-btn"]').should('be.visible').click()
     cy.wait(3000)
     expect(true).to.equal(true)
 
