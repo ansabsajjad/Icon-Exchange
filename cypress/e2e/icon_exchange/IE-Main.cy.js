@@ -26,12 +26,13 @@ import Pay_Rate_View from "./Pay_Rate_View.cy"
 import Edit_Pay_Rate from "./Edit_Pay_rate.cy"
 import Delete_Pay_Rate from "./Delete_Pay_Rate.cy"
 import Update_Malpractice from "./Update_Malpractice.cy"
+import Provider_Expense from "./Provider_Expense.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()
-    Icon_Exchange_Login() 
+    // Icon_Exchange_Login() 
     
     // Add_Provider()
     // Provider_Search()
@@ -67,6 +68,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Malpractice_Search()
     // Update_Malpractice()
 
+    Provider_Expense()
 
 })
 

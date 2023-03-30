@@ -1,7 +1,7 @@
 
 const Provider_data = {
-    Provider_Email : "ansab+147@troontechnologies.com",
-    Provider_Password: "Admin@12345"
+    Provider_Email : "majid+9@troontechnologies.com",
+    Provider_Password: "Admin@2022"
    }
 
    
