@@ -28,7 +28,7 @@ function Provider_Expense(){
     });
     
     it('12- Click on Sign In Button.', () => {
-        cy.get('.btn').click({force:true)
+        cy.get('.btn').click({force:true})
         expect(true).to.equal(true)
     });
     
@@ -39,24 +39,24 @@ function Provider_Expense(){
     });
 
     it('EX-6 CLick on Complete Profile later button. ', () => {
-        cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn').click({force:true)
+        cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn').click({force:true})
         cy.wait(3000)
     });
 
 
     it('EX-7 Click Expenses. ', () => {
-        cy.get('.ml-4').click({force:true)
+        cy.get('.ml-4').click({force:true})
     });
 
 
     it('EX-Click on Add Expense. ', () => {
-        cy.get('.px-5').click({force:true)
+        cy.get('.px-5').click({force:true})
         cy.wait(5000)
     });
 
 
     it('EX- Select Facility  Name.', () => {
-        cy.get('[id="react-select-14-input"]').click({force:true).wait(2000)
+        cy.get('[id="react-select-14-input"]').click({force:true}).wait(2000)
     cy.get('#react-select-14-option-0').click({force: true})   /////===============Array Index 0
     cy.wait(2000)
 
@@ -64,7 +64,7 @@ function Provider_Expense(){
 
 
     it('EX- Select Expense Type.', () => {
-        cy.get('[id="react-select-15-input"]').click({force:true).wait(2000)
+        cy.get('[id="react-select-15-input"]').click({force:true}).wait(2000)
     cy.get('#react-select-15-option-0').click({force: true})   /////===============Array Index 0
     cy.wait(2000)
 
@@ -77,7 +77,7 @@ function Provider_Expense(){
 
 
     it('EX- Enter Expense Start Date. ', () => {
-        cy.get('[name="expenses.0.expenseSpentStartDate"]').click({force:true).type("04/12/2023 - 04/27/2023")
+        cy.get('[name="expenses.0.expenseSpentStartDate"]').click({force:true}).type("04/12/2023 - 04/27/2023")
     });
 
 
@@ -136,7 +136,7 @@ function Provider_Expense(){
 
     it('EX- Click on Create button. ', () => {
         cy.wait(30000)
-        cy.get('[type="submit"]').click({force:true)
+        cy.get('[type="submit"]').click({force:true})
     });
 
 
