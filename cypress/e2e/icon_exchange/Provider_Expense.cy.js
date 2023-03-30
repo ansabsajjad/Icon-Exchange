@@ -85,57 +85,15 @@ function Provider_Expense(){
         cy.get('[name="expenses.0.description"]').type("This is description.")
     });
     it('', () => {
-        cy.get('.global-file-style').click({force:true})
+        cy.get('.btn-browse').click({force:true})
         const filepath11 = "a11.jpg"
-        cy.get('.global-file-style').attachFile("AS_logo.png")
-        cy.wait(4000)
-    });
-
-    it.skip('EX- Upload image.', () => {
-        cy.wait(3000)
-    
-       
-    
-        cy.get('.btn-browse').then(subject => {
-            // Your file path goes here
-            const filePath = 'a11.jpg' // Updated file path
-            cy.fixture(filePath, 'binary')
-              .then(Cypress.Blob.binaryStringToBlob)
-              .then(blob => {
-                const el = subject[0]
-                const testFile = new File([blob], filePath, { type: 'image/jpeg' }) // Updated file type to "image/jpeg"
-                const dataTransfer = new DataTransfer()
-          
-                dataTransfer.items.add(testFile)
-                el.files = dataTransfer.files
-          
-                cy.wrap(subject).trigger('change', { force: true })
-              })
-          })
-       
-    });
-
-    it('EX- ', () => {
-        cy.get('.global-file-style').then(subject => {
-            const filePath = "a11.jpg" // Update file path here
-            cy.fixture(filePath, 'binary')
-              .then(Cypress.Blob.binaryStringToBlob)
-              .then(blob => {
-                const el = subject[0]
-                const testFile = new File([blob], filePath, { type: 'image/jpeg' }) // Change the file type here if needed
-          
-                const dataTransfer = new DataTransfer()
-                dataTransfer.items.add(testFile)
-                el.files = dataTransfer.files
-          
-                cy.wrap(subject).trigger('change', { force: true })
-              })
-          })
+        cy.get('.btn-browse').attachFile(filepath11,{subjectType: 'drag-n-drop'})
+        cy.wait(5000)
     });
 
 
     it('EX- Click on Create button. ', () => {
-        cy.wait(30000)
+        // cy.wait(30000)
         cy.get('[type="submit"]').click({force:true})
     });
 
