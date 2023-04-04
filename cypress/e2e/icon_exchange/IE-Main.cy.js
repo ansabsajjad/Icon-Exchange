@@ -35,7 +35,7 @@ import Edit_Provider_Expense from "./Edit_Provider_Expense.cy"
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()
-    // Icon_Exchange_Login() 
+    Icon_Exchange_Login() 
     
     // Add_Provider()
     // Provider_Search()
@@ -69,12 +69,12 @@ describe("let's Automate Icon Exchange.", function(){
 
     //Add_Malpractice()
     // Malpractice_Search()
-    // Update_Malpractice()
+    Update_Malpractice()
 
-    Provider_Login()
+    // Provider_Login()
     // Provider_Expense()
-    View_Provider_Expense()
-    Edit_Provider_Expense()
+    // View_Provider_Expense()
+    // Edit_Provider_Expense()
 
 })
 
