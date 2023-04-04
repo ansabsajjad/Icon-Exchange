@@ -1,9 +1,8 @@
 import Provider_data from "../../fixtures/Icon Exchange Credentials/Provider_Data.cy";
-import Provider_Login from "./Provider_Login.cy";
 
 function Provider_Expense(){
 
-    Provider_Login()
+   
 
     it('EX-6 CLick on Complete Profile later button. ', () => {
         cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn').click({force:true})
@@ -63,7 +62,7 @@ function Provider_Expense(){
 
 
     it('EX- Click on Add more.', () => {
-        cy.get('.addmore').click().wait(3000)
+        cy.get('.addmore').click({force:true}).wait(3000)
     });
 
 
@@ -75,12 +74,12 @@ function Provider_Expense(){
 
 
     it('EX- Enter total amount. ', () => {
-        cy.get('[data-testid="expenses.1.totalAmount"]').click().type("56")
+        cy.get('[data-testid="expenses.1.totalAmount"]').click({force:true}).type("56")
     });
 
 
     it('EX- Enter Expense Spent date. ', () => {
-        cy.get('[name="expenses.1.expenseSpentStartDate"]').click().type("05/22/2023 - 05/25/2023")
+        cy.get('[name="expenses.1.expenseSpentStartDate"]').click({force:true}).type("05/22/2023 - 05/25/2023")
     });
 
 

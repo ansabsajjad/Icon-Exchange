@@ -1,3 +1,5 @@
+import Provider_data from "../../fixtures/Icon Exchange Credentials/Provider_Data.cy";
+
 function Provider_Login(){
 
 
@@ -16,6 +18,7 @@ function Provider_Login(){
     it('4- Enter Provider Email.', () => {
         cy.wait(2000);
         cy.get(':nth-child(1) > .form-group > .form-controls > input').clear().type(Provider_data.Provider_Email, {delay: 100})
+
         expect(true).to.equal(true)
        
     });
