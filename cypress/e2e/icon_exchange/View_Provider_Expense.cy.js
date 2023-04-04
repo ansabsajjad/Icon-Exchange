@@ -2,11 +2,10 @@
 
 function View_Provider_Expense(){
 
+    it('Click Expenses. ', () => {
+        cy.get('.ml-4').click({force:true})
+    });
 
-it(' CLick on Complete Profile later button. ', () => {
-    cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn').click({force:true})
-    cy.wait(3000)
-});
 
 it('Scroll to right side.', () => {
     cy.get('.scroll-table').scrollTo('right',{ duration: 2000 }).wait(2000)

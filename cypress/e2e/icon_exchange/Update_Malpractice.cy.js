@@ -33,7 +33,7 @@ function Update_Malpractice(){
     });
 
     it('UM- Update Hourly Rate.', () => {
-        cy.get('[data-testid="hourlyRate"]').type("40").wait("2000")
+        cy.get('[name="hourlyRate"]').click({force:true}).type("40").wait("2000")
     });
 
     it('UM- Update Effective Start Rate.', () => {

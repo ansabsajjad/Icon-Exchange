@@ -1,11 +1,10 @@
 
 function Edit_Provider_Expense(){
 
-    
-it(' Click on Complete Profile later button. ', () => {
-    cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn').click({force:true})
-    cy.wait(3000)
-});
+    it('Click Expenses. ', () => {
+        cy.get('.ml-4').click({force:true})
+    });
+
 
 it('Scroll to right side.', () => {
     cy.get('.scroll-table').scrollTo('right',{ duration: 2000 }).wait(2000)
@@ -22,16 +21,16 @@ it(' Click on Edit button.', () => {
 
 
 it('EX- Select Facility  Name.', () => {
-    cy.get('[id="react-select-18-input"]').click({force:true}).wait(2000)
-cy.get('#react-select-14-option-1').click({force: true})   /////===============Array Index 0
+    cy.get('[id="react-select-16-input"]').click({force:true}).wait(2000)
+cy.get('#react-select-16-option-1').click({force: true})   /////===============Array Index 0
 cy.wait(2000)
 
 });
 
 
 it('EX- Select Expense Type.', () => {
-    cy.get('[id="react-select-19-input"]').click({force:true}).wait(2000)
-cy.get('#react-select-15-option-1').click({force: true})   /////===============Array Index 0
+    cy.get('[id="react-select-17-input"]').click({force:true}).wait(2000)
+cy.get('#react-select-17-option-1').click({force: true})   /////===============Array Index 0
 cy.wait(2000)
 
 });
