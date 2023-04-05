@@ -37,7 +37,7 @@ cy.wait(2000)
 
 
 it('EX- Enter Total Amount.', () => {
-    cy.get('[data-testid="expenses.0.totalAmount"]').type("40")
+    cy.get('[data-testid="expenses.0.totalAmount"]').clear().type("50")
 });
 
 
