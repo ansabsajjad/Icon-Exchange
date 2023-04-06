@@ -4,10 +4,10 @@ function Provider_Expense(){
 
    
 
-    it('EX-6 CLick on Complete Profile later button. ', () => {
-        cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn').click({force:true})
-        cy.wait(3000)
-    });
+    // it('EX-6 CLick on Complete Profile later button. ', () => {
+    //     cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn').click({force:true})
+    //     cy.wait(3000)
+    // });
 
 
     it('EX-7 Click Expenses. ', () => {
