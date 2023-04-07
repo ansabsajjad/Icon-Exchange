@@ -1,5 +1,3 @@
-import Provider_Click from "./Provider_Click.cy";
-import Provider_Edit from "./Provider_Edit.cy";
 
 function Provider_condition(){
 
