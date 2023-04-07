@@ -31,7 +31,7 @@ import Provider_Login from "./Provider_Login.cy"
 import View_Provider_Expense from "./View_Provider_Expense.cy"
 import Edit_Provider_Expense from "./Edit_Provider_Expense.cy"
 import Provider_Expense_Search from "./Provider_Expense_Search.cy"
-import Provider_test from "./Provider_Expense_Conditions.cy"
+import Provider_condition from "./Provider_Expense_Conditions.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
@@ -78,6 +78,7 @@ describe("let's Automate Icon Exchange.", function(){
     // View_Provider_Expense()
     // Edit_Provider_Expense()
     // Provider_Expense_Search()
-    Provider_test()
+    Provider_condition()
+    
 })
 

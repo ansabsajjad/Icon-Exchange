@@ -1,7 +1,7 @@
 import Provider_Click from "./Provider_Click.cy";
 import Provider_Edit from "./Provider_Edit.cy";
 
-function Provider_test(){
+function Provider_condition(){
 
    
   it('Click on Settings.', () => {
@@ -57,4 +57,4 @@ it('Check condition.', () => {
 
 
 }
-    export default Provider_test;
+    export default Provider_condition;
