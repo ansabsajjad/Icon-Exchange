@@ -32,6 +32,7 @@ import View_Provider_Expense from "./View_Provider_Expense.cy"
 import Edit_Provider_Expense from "./Edit_Provider_Expense.cy"
 import Provider_Expense_Search from "./Provider_Expense_Search.cy"
 import Provider_condition from "./Provider_Expense_Conditions.cy"
+import {Hours_Completion_Bonus, Performance_Bonus, Refferal_Bonus, Incentive, Others_Bonus} from "./Bonus_and_Incentive.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
@@ -78,7 +79,13 @@ describe("let's Automate Icon Exchange.", function(){
     // View_Provider_Expense()
     // Edit_Provider_Expense()
     // Provider_Expense_Search()
-    Provider_condition()
+    // Provider_condition()
+
+    // Hours_Completion_Bonus()
+    // Performance_Bonus()
+    // Refferal_Bonus()
+    // Incentive()
+    // Others_Bonus()
     
 })
 
