@@ -70,7 +70,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Pay_Rate()
     // Delete_Pay_Rate()
 
-    //Add_Malpractice()
+    // Add_Malpractice()
     // Malpractice_Search()
     // Update_Malpractice()
 
@@ -80,12 +80,16 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Provider_Expense()
     // Provider_Expense_Search()
     // Provider_condition()
+    // Admin_Expense()
 
     // Hours_Completion_Bonus()
     // Performance_Bonus()
     // Refferal_Bonus()
     // Incentive()
     // Others_Bonus()
+
+
+    
     
 })
 

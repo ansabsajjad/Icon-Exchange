@@ -49,10 +49,14 @@ it('B- Enter Bonus Amount.', () => {
 });
 
 
-it('B- ', () => {
-    // cy.get('[data-testid="createrecord"]').click()
+it('B- Click on Save & Approve button. ', () => {
+    cy.get('[data-testid="createrecord"]').click()
 });
 
+it('Verifying the Toast message', () => {
+    cy.wait(1000);
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+ });
 }
 
 //================================================ Performance Bonus ================================================//
@@ -101,10 +105,16 @@ function Performance_Bonus(){
     });
     
     
-    it('B- ', () => {
+    it('B- Click on Save & Approve button. ', () => {
         cy.get('[data-testid="createrecord"]').click()
     });
-}
+
+    it('Verifying the Toast message', () => {
+        cy.wait(1000);
+        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+     });
+    
+    }
 
 
     
@@ -155,11 +165,15 @@ function Refferal_Bonus(){
    });
     
     
-    it('B- ', () => {
+    it('B- Click on Save & Approve button. ', () => {
         cy.get('[data-testid="createrecord"]').click()
     });
 
 
+    it('Verifying the Toast message', () => {
+        cy.wait(1000);
+        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+     });
 
 
 }
@@ -208,13 +222,20 @@ function Incentive(){
    });
     
     
-    it('B- ', () => {
+    it('B- Click on Save & Approve button. ', () => {
         cy.get('[data-testid="createrecord"]').click()
     });
 
 
+    it(' Verifying the Toast message', () => {
+        cy.wait(1000);
+        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+     });
 
-
+     it('Verifying the Toast message', () => {
+        cy.wait(1000);
+        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+     });
 }
 
   
@@ -254,11 +275,14 @@ function Others_Bonus(){
    });
     
     
-    it('B- ', () => {
+    it('B- Click on Save & Approve button. ', () => {
         cy.get('[data-testid="createrecord"]').click()
     });
 
-
+    it(' Verifying the Toast message', () => {
+        cy.wait(1000);
+        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+     });
 
 
 }
