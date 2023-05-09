@@ -92,9 +92,8 @@ function Admin_Expense(){
         cy.wait(5000)
     });
 
-    it('EX- Click on Create button. ', () => {
-        // cy.wait(30000)
-        cy.get('[type="submit"]').click({force:true})
+    it('EX- Click on Save & Approve. ', () => {
+        cy.get('[data-testid="approve-expense"]').click({force:true})
     });
     
     it('EX- ', () => {
