@@ -1,3 +1,7 @@
+
+//================================================ Admin_Expense ================================================//
+
+
 function Admin_Expense(){
 
     it('E-1 Click on Expenses.', () => {
@@ -101,21 +105,190 @@ function Admin_Expense(){
     });
 
 
+}
 
-    it('EX- ', () => {
-        
+//================================================ View_Admin_Expense ================================================//
+
+
+function View_Admin_Expense(){
+
+    it('E-1 Click on Expenses.', () => {
+        cy.get('[data-testid="mainmenu-3"]').click({force:true})
+        cy.wait(4000)
+    expect(true).to.equal(true)
     });
+    
 
 
+it('Scroll to right side.', () => {
+    cy.get('.scroll-table').scrollTo('right',{ duration: 2000 }).wait(2000)
+});
 
-    it('EX- ', () => {
-        
-    });
+
+it('Click on 3 dots.', () => {
+    cy.get(':nth-child(1) > :nth-child(9) > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true}).wait(2000)
+});
+
+it(' Click on View button.', () => {
+    cy.contains('View').click({force: true}).wait(4000)
+});
 
 
+it('Scroll Down.', () => {
+    cy.scrollTo('bottom',{ duration: 4000 }).wait(2000)
+});
+
+it('Scroll Top.', () => {
+    cy.scrollTo('top',{ duration: 4000 }).wait(2000)
+});
+
+it('', () => {
+    
+});
 
 
 
 
 }
-export default Admin_Expense
+
+//================================================ Edit_Admin_Expense ================================================//
+
+
+function Edit_Admin_Expense(){
+
+    it('E-1 Click on Expenses.', () => {
+        cy.get('[data-testid="mainmenu-3"]').click({force:true})
+        cy.wait(4000)
+    expect(true).to.equal(true)
+    });
+    
+
+
+it('Scroll to right side.', () => {
+    cy.get('.scroll-table').scrollTo('right',{ duration: 2000 }).wait(2000)
+});
+
+
+it('Click on 3 dots.', () => {
+    cy.get(':nth-child(3) > :nth-child(9) > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true}).wait(2000)
+});
+
+it(' Click on Edit button.', () => {
+    cy.contains('Edit').click({force: true}).wait(4000)
+});
+
+it('EX- Select Provider  Name.', () => {
+    cy.get('[id="react-select-14-input"]').click({force:true}).wait(2000)
+cy.get('#react-select-14-option-1').click({force: true})   /////===============Array Index 1
+cy.wait(2000)
+
+});
+
+it('EX- Select Facility  Name.', () => {
+    cy.get('[id="react-select-15-input"]').click({force:true}).wait(2000)
+    cy.get('#react-select-15-option-0').click({force: true})   /////===============Array Index 1
+
+cy.wait(2000)
+
+});
+
+
+it('EX- Select Expense Type.', () => {
+    cy.get('[id="react-select-16-input"]').click({force:true}).wait(2000)
+cy.get('#react-select-16-option-1').click({force: true})   /////===============Array Index 1
+cy.wait(2000)
+
+});
+
+
+it('EX- Enter Total Amount.', () => {
+    cy.get('[data-testid="expenses.0.totalAmount"]').clear().type("50")
+});
+
+
+it('EX- Enter Expense Start Date. ', () => {
+    cy.get('[name="expenses.0.expenseSpentStartDate"]').click({force:true}).type("05/19/2023 - 05/21/2023")
+});
+
+
+it('EX- Enter Description.', () => {
+    cy.get('[name="expenses.0.description"]').type("This is description.")
+});
+
+
+it('Click on Update button.', () => {
+    cy.get('[data-testid="save-expense"]').click({force:true})
+});
+
+it('Verifying the Toast message', () => {
+    cy.wait(1000);
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Expense Updated Successfully')
+});
+
+
+}
+
+function admin_Expense_Condition(){
+
+    it('E-1 Click on Expenses.', () => {
+        cy.get('[data-testid="mainmenu-3"]').click({force:true})
+        cy.wait(4000)
+    expect(true).to.equal(true)
+    });
+    
+    it('Check condition.', () => {
+    
+        cy.get(':nth-child(1) > :nth-child(6) > .text-capitalize').then(($td) => {
+              const value = $td.text().trim();
+              if (value === 'approved') {
+                cy.wait(2000)
+                //                          Click for View.()
+               
+               
+
+                
+    cy.get('.scroll-table').scrollTo('right',{ duration: 2000 }).wait(2000)
+
+    cy.get(':nth-child(1) > :nth-child(9) > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true}).wait(2000)
+
+    cy.contains('View').click({force: true}).wait(4000)
+
+    cy.scrollTo('bottom',{ duration: 4000 }).wait(2000)
+
+    cy.scrollTo('top',{ duration: 4000 }).wait(2000)
+
+
+            
+              } else {
+                cy.wait(3000)
+      
+                //Expense_Edit()
+                
+    cy.get('.scroll-table').scrollTo('right',{ duration: 2000 }).wait(2000)
+    cy.get(':nth-child(3) > :nth-child(9) > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true}).wait(2000)
+    cy.contains('Edit').click({force: true}).wait(4000)
+    cy.get('[id="react-select-14-input"]').click({force:true}).wait(2000)
+    cy.get('#react-select-14-option-1').click({force: true})   /////===============Array Index 1
+    cy.wait(2000)
+    cy.get('[id="react-select-15-input"]').click({force:true}).wait(2000)
+    cy.get('#react-select-15-option-0').click({force: true})   /////===============Array Index 1
+    cy.wait(2000)
+    cy.get('[id="react-select-16-input"]').click({force:true}).wait(2000)
+    cy.get('#react-select-16-option-1').click({force: true})   /////===============Array Index 1
+    cy.wait(2000)
+    cy.get('[data-testid="expenses.0.totalAmount"]').clear().type("50")
+    cy.get('[name="expenses.0.expenseSpentStartDate"]').click({force:true}).type("05/19/2023 - 05/21/2023")
+    cy.get('[name="expenses.0.description"]').type("This is description.")
+    cy.get('[data-testid="save-expense"]').click({force:true})
+    cy.wait(1000);
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Expense Updated Successfully')
+
+
+              }
+            });
+        });
+
+    
+}
+
+export default {Admin_Expense, View_Admin_Expense, Edit_Admin_Expense, admin_Expense_Condition}
