@@ -18,7 +18,7 @@ function Admin_Expense(){
 
 
     it('EX- Select Provider  Name.', () => {
-        cy.get('[id="react-select-14-input"]').click({force:true}).wait(2000)
+    cy.get('[id="react-select-14-input"]').click({force:true}).wait(2000)
     cy.get('#react-select-14-option-0').click({force: true})   /////===============Array Index 0
     cy.wait(2000)
 

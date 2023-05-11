@@ -47,7 +47,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Delete_Provider()
     // Assign_Facility()
  
-    // Add_Icon_Exchange_Facilities() 
+    Add_Icon_Exchange_Facilities() 
     // edit_facility()
     // delete_facility()
     // Facility_Search()
@@ -84,7 +84,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Admin_Expense()
     // View_Admin_Expense()
     // Edit_Admin_Expense()
-    admin_Expense_Condition()
+    // admin_Expense_Condition()
 
     // Hours_Completion_Bonus()
     // Performance_Bonus()
