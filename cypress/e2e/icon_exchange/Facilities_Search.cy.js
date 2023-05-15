@@ -67,9 +67,9 @@ it(' Clear Search filter.', () => {
  it('Search Facility Contract.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
-    cy.get('.custom-select__input-container').click().type("icon exchange").type('{enter}')
-   cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
-
+    cy.get('[id="react-select-10-input"]').click({force:true}).wait(2000)
+    cy.get('#react-select-10-option-1').click({force: true})   /////===============Array Index 0
+    cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
     cy.wait(5000)
 
 });

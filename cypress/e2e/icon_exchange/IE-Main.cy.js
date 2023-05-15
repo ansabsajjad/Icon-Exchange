@@ -47,10 +47,10 @@ describe("let's Automate Icon Exchange.", function(){
     // Delete_Provider()
     // Assign_Facility()
  
-    Add_Icon_Exchange_Facilities() 
+    // Add_Icon_Exchange_Facilities() 
     // edit_facility()
     // delete_facility()
-    // Facility_Search()
+    Facility_Search()
 
     // Delete_Icon_user()
     // Icon_Users()
