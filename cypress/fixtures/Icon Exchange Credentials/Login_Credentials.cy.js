@@ -6,6 +6,13 @@ const Super_Admin_data = {
     wrong_Password: "wrong_Password"
    }
 
+   const Icon_User_data = {
+    IC_Email : "ansab+2@troontechnologies.com",
+    IC_Password: "Admin@2022"
+   }
+
+
+
    
  
-   export default Super_Admin_data
+   export default {Super_Admin_data, Icon_User_data}

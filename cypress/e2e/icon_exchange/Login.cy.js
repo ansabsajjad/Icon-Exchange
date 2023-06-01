@@ -1,7 +1,7 @@
 /// <reference types="Cypress" /> 
 
 import Icon_Exchange_URL from "../../fixtures/Icon Exchange Credentials/IE_URL.cy";
-import Super_Admin_data from "../../fixtures/Icon Exchange Credentials/Login_Credentials.cy";
+import {Super_Admin_data, Icon_User_data} from "../../fixtures/Icon Exchange Credentials/Login_Credentials.cy";
 
 function Icon_Exchange_Login() {
    

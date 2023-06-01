@@ -113,7 +113,9 @@ it('Enter Distance.', () => {
 });
 
 it('Select Time Zone.', () => {
-    cy.get(':nth-child(5) > :nth-child(2) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).type("us Eastern standard Time").type('{enter}').wait(2000)
+    cy.get('[id="react-select-8-input"]').click({force:true}).wait(2000)
+    cy.get('#react-select-8-option-0').click({force: true})   /////===============Array Index 0
+
 });
 
 it('', () => {

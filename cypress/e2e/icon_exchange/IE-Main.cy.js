@@ -34,12 +34,14 @@ import Provider_Expense_Search from "./Provider_Expense_Search.cy"
 import Provider_condition from "./Provider_Expense_Conditions.cy"
 import {Hours_Completion_Bonus, Performance_Bonus, Refferal_Bonus, Incentive, Others_Bonus} from "./Bonus_and_Incentive.cy"
 import {Admin_Expense, View_Admin_Expense, Edit_Admin_Expense, admin_Expense_Condition} from "./Admin_Expense.cy"
+import Icon_user_per_Login from "./Icon_user_per_login.cy"
+import { IC_Bonus, IC_Notification } from "./IC_Permissions.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()
-    Icon_Exchange_Login() 
+    // Icon_Exchange_Login() 
     
     // Add_Provider()
     // Provider_Search()
@@ -50,7 +52,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Add_Icon_Exchange_Facilities() 
     // edit_facility()
     // delete_facility()
-    Facility_Search()
+    // Facility_Search()
 
     // Delete_Icon_user()
     // Icon_Users()
@@ -92,8 +94,12 @@ describe("let's Automate Icon Exchange.", function(){
     // Incentive()
     // Others_Bonus()
 
+    Icon_user_per_Login()
+    
+    // IC_Notification()
+    IC_Bonus()
 
-    
-    
+
+
 })
 
