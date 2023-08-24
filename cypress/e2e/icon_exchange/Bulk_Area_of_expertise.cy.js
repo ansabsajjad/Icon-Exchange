@@ -16,13 +16,14 @@ function Bulk_Area_of_expertise(){
                 .wait(1000);
           
 
-        cy.contains('Edit Info').wait(2000).click();
+        cy.contains('Edit Info').click().wait(1000)
         
-        cy.get('#left-tabs-example-tab-4 > .d-flex > .tabname').click({force:true}).wait(1000)
+        cy.get('#left-tabs-example-tab-4 > .d-flex > .tabname').click().wait(2000)
         
 
-        cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(1000)
-        cy.get('[data-testid="savecontbtn"]').click({force:true}).wait(3000)
+        cy.get(':nth-child(1) > .form-checkbox > .form-check-label').click({force:true}).wait(2000)
+        cy.get(':nth-child(9) > .form-checkbox > .form-check-label').click({force:true}).wait(2000)
+        cy.get('.formstyle > .form-footer-full > .container > .row > .col-md-8 > [data-testid="savecontbtn"]').click({force:true}).wait(2000)
         cy.get('#left-tabs-example-tabpane-1 > form > .form-footer-full > .container > .row > .col-md-4 > .btn').click({force:true}).wait(1000)
 
 
