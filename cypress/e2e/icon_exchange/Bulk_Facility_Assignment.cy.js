@@ -1,21 +1,37 @@
 
 function Bulk_Facility_Assignment() {
 
-    // Array of indices to loop through (1 to 25
-    const index = 30; 
+    // // Array of indices to loop through (1 to 25
+    // const index = 1; 
 
-    const indices = Array.from({ length: 100 }, (_, index) => index + 1);
+    // const indices = Array.from({ length: 100 }, (_, index) => index + 1);
           
-    indices.forEach((index) => {
+    // indices.forEach((index) => {
     
+
+
+// Array of indices to loop through
+const startIndex = 1;
+const endIndex = 100;
+const emailPattern = 'ansab+BP';
+const emailDomain = '@troontechnologies.com';
+
+for (let index = startIndex; index <= endIndex; index++) {
+//   const emailAddress = `${emailPattern}${index}${emailDomain}`;
+
+    
+
+
+
     it('Cycle ' + (index) + ' Click on 3 dot button.', () => {
        
   
             
-              cy.wait(2000);
-              cy.get(`:nth-child(${index}) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots`)
-                .click({ force: true })
-                .wait(1000);
+        cy.wait(2000);
+        cy.get(`:nth-child(${index}) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots`)
+          .click({ force: true })
+          .wait(2000);
+    
           
                 cy.get('[data-testid="view-assigned-facilities"]').wait(1000).click();
             cy.wait(4000)
@@ -106,17 +122,17 @@ function Bulk_Facility_Assignment() {
 
 
 
-         cy.get('[data-testid="createbtn"]').click({force:true}).wait(3000)
+         cy.get('[data-testid="createbtn"]').click({force:true}).wait(5000)
 
-        cy.get('[data-testid="submenu-providers-listing"]').click({force:true}).wait(3000)
-
-
+        cy.get('[data-testid="submenu-providers-listing"]').click({force:true}).wait(5000)
 
 
-        });
 
 
         });
+
+
+        }
 
     
 
