@@ -96,7 +96,7 @@ it.skip('13- Verifying the Toast message', () => {
 });
 
 it('', () => {
-    
+    cy.wait(6000)
 });
 
 it('', () => {

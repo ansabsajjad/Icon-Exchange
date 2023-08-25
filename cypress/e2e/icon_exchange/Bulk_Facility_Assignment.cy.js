@@ -2,7 +2,9 @@
 function Bulk_Facility_Assignment() {
 
     // Array of indices to loop through (1 to 25
-    const indices = Array.from({ length: 25 }, (_, index) => index + 1);
+    const index = 30; 
+
+    const indices = Array.from({ length: 100 }, (_, index) => index + 1);
           
     indices.forEach((index) => {
     
@@ -15,7 +17,7 @@ function Bulk_Facility_Assignment() {
                 .click({ force: true })
                 .wait(1000);
           
-            cy.contains('View Assigned Facilities').wait(1000).click();
+                cy.get('[data-testid="view-assigned-facilities"]').wait(1000).click();
             cy.wait(4000)
             cy.get('[data-testid="assign-facility-btn"]').click()
             cy.wait(4000)

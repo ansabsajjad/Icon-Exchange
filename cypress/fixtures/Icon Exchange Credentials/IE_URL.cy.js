@@ -6,9 +6,9 @@ function Icon_Exchange_URL() {
    
       // cy.visit("https://admin-stage-iconxchng.troonlab.io/login", {failOnStatusCode: false})  //==> Stagging Server.
 
-      // cy.visit("https://admin-qa-iconxchng.troonlab.io/login", {failOnStatusCode: false})  //==> QA Server.
+      cy.visit("https://admin-qa-iconxchng.troonlab.io/login", {failOnStatusCode: false})  //==> QA Server.
 
-       cy.visit("https://iconxchange.com/login", {failOnStatusCode: false})  //==> QA Server.
+      //  cy.visit("https://iconxchange.com/login", {failOnStatusCode: false})  //==> Live Server.
 
       
      }); 
