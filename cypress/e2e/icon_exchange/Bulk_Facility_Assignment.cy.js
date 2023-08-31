@@ -32,7 +32,7 @@ for (let index = startIndex; index <= endIndex; index++) {
         cy.get(`:nth-child(${index}) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots`)
           .click({ force: true })
 
-    
+       
           
              cy.get('[data-testid="view-assigned-facilities"]').wait(1000).click();
             cy.wait(4000)
