@@ -2,7 +2,7 @@
 function Delete_Provider(){
 
     it('DP-1 Click on provider.', () => {
-        cy.get('.submenu.active > .relative > .cursor-pointer > :nth-child(2)').click()
+        cy.get('[data-testid="submenu-providers-listing"] > :nth-child(2)').click()
         cy.wait(2000)
         expect(true).to.equal(true)
     
@@ -14,7 +14,7 @@ function Delete_Provider(){
     });
 
     it('DP-3 Click on 3 dot button.', () => {
-        cy.get(':nth-child(1) > :nth-child(13) > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true})
+       cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true})
         expect(true).to.equal(true)
     });
 

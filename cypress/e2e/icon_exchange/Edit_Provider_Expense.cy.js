@@ -52,7 +52,7 @@ it('EX- Enter Description.', () => {
 
 
 it('Click on Update button.', () => {
-    cy.get('[type="submit"]').click({force:true})
+     cy.get('[data-testid="createbtn"]').click({force:true})
 });
 
 

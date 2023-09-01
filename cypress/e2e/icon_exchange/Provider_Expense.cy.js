@@ -95,7 +95,7 @@ function Provider_Expense(){
 
     it('EX- Click on Create button. ', () => {
         // cy.wait(30000)
-        cy.get('[type="submit"]').click({force:true})
+         cy.get('[data-testid="createbtn"]').click({force:true})
     });
     
     it('EX- ', () => {

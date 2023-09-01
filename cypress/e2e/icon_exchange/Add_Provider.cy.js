@@ -4,7 +4,7 @@ import Random_Textt from "./Random_Text";
 function Add_Provider() {
 
 it('Click on provider.', () => {
-    cy.get('.submenu.active > .relative > .cursor-pointer > :nth-child(2)').click()
+    cy.get('[data-testid="submenu-providers-listing"] > :nth-child(2)').click()
     expect(true).to.equal(true)
 
 });

@@ -10,7 +10,7 @@ it('Search First Name.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
     cy.get('#name').type("ANSAB").wait(1000)
-    cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
+     cy.get('[data-testid="search"]').click({force:true})
     
     cy.wait(5000)
 
@@ -31,7 +31,7 @@ it('Search First Name.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
     cy.get('#email').type("troontechnologies.com").wait(1000)
-   cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
+    cy.get('[data-testid="search"]').click({force:true})
     cy.wait(5000)
 
 });
@@ -48,7 +48,7 @@ it(' Clear Search filter.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
     cy.get('#phone').type("4567895376").wait(1000)
-   cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
+    cy.get('[data-testid="search"]').click({force:true})
     cy.wait(5000)
 
 });
@@ -69,7 +69,7 @@ it(' Clear Search filter.', () => {
     cy.wait(2000)
     cy.get('[id="react-select-10-input"]').click({force:true}).wait(2000)
     cy.get('#react-select-10-option-1').click({force: true})   /////===============Array Index 0
-    cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
+     cy.get('[data-testid="search"]').click({force:true})
     cy.wait(5000)
 
 });

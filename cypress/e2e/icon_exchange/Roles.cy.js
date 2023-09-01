@@ -34,7 +34,7 @@ expect(true).to.equal(true)
 });
 
 it("R-6 Click on Create button.", function(){
-    cy.get('[type="submit"]').click()
+     cy.get('[data-testid="createbtn"]').click()
 })
 
 it('R-7 Verifying the Toast message.', () => {

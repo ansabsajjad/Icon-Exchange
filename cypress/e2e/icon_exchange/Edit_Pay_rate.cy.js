@@ -115,7 +115,7 @@ it('PV-25 Enter Evening Pager Call.', () => {
                                                         
 
 it('PV-26 Click on Create button.', () => {
-    cy.get('[type="submit"]').click({force:true})
+     cy.get('[data-testid="createbtn"]').click({force:true})
 });
                                                         
 

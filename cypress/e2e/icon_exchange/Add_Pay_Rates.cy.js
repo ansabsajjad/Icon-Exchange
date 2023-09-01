@@ -123,7 +123,7 @@ function Add_Pay_Rates(){
                                                             
 
     it('AP -26 Click on Create button.', () => {
-        cy.get('[type="submit"]').click({force:true})
+         cy.get('[data-testid="createbtn"]').click({force:true})
     });
                                                             
 

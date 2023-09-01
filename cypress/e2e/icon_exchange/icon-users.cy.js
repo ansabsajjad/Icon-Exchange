@@ -75,7 +75,7 @@ expect(true).to.equal(true)
 
 it('IU-13 Click on Submit Button.', () => {
     cy.wait(3000)
-    cy.get('[type="submit"]').click({force: true})
+     cy.get('[data-testid="createbtn"]').click({force: true})
 expect(true).to.equal(true)
 });
 it('IU-14 Verifying the Toast message.', () => {

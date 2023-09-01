@@ -48,11 +48,11 @@ describe("let's Automate Icon Exchange.", function(){
     
     // Add_Provider()
     // Provider_Search()
-    // View_Provider() 
+    // View_Provider()   
     // Delete_Provider()
     // Assign_Facility()
  
-    // Add_Icon_Exchange_Facilities() 
+    Add_Icon_Exchange_Facilities()
     // edit_facility()
     // delete_facility()
     // Facility_Search()
@@ -107,7 +107,7 @@ describe("let's Automate Icon Exchange.", function(){
     // IC_Others_Bonus()
     // IC_Bonus_Condition()
 
-    Bulk_Facility_Assignment()
+    // Bulk_Facility_Assignment()
     // Bulk_add_provider()
     // Bulk_Area_of_expertise()
 

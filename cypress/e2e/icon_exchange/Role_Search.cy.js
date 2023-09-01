@@ -13,7 +13,7 @@ function Icon_Role_Search() {
 it('Search by Role.', () => {
     cy.get('.left-icon').click({force:true})
     cy.get('#name').click().type("ANSAB")
-    cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
+     cy.get('[data-testid="search"]').click({force:true})
     cy.wait(5000)
 
 });
@@ -32,7 +32,7 @@ it('Clear Filter.', () => {
 it('Search by Description.', () => {
     cy.get('.left-icon').click({force:true})
     cy.get('#description').click().type("ANSAB")
-    cy.get(':nth-child(2) > :nth-child(2) > .btn').click()
+     cy.get('[data-testid="search"]').click({force:true})
     cy.wait(5000)
 
 });

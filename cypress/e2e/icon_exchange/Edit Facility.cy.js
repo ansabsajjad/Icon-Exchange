@@ -83,7 +83,7 @@ it('Update Contact Name.', () => {
 
 
 it('Click on Update Button.', () => {
-    cy.get('[type="submit"]').click({force: true})
+     cy.get('[data-testid="createbtn"]').click({force: true})
     expect(true).to.equal(true)
 
 });

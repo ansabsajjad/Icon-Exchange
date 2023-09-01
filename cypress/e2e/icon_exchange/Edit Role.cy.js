@@ -39,7 +39,7 @@ it('ER-6 Manage Permissions', () => {
 });
 
 it('ER-7 Click on Update button.', () => {
-    cy.get('[type="submit"]').click({force: true})
+     cy.get('[data-testid="createbtn"]').click({force: true})
     expect(true).to.equal(true)
 
 });

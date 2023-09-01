@@ -5,12 +5,12 @@ function Add_Icon_Exchange_Facilities() {
 
 it('F1- Click on the Facilities.', () => {
     cy.wait(3000)
-    cy.get(':nth-child(3) > .relative > .cursor-pointer > :nth-child(2)').click()
+    cy.get('[data-testid="mainmenu-facilities"] > .ml-4').click()
     expect(true).to.equal(true)
 });
 
 it("F2- Click on 'Add Facility' button.", () => {
-    cy.get('.px-5').should('be.visible').click()
+    cy.get('[data-testid="add-facility-btn"]').should('be.visible').click()
     cy.wait(3000)
     expect(true).to.equal(true)
 
@@ -19,7 +19,7 @@ it("F2- Click on 'Add Facility' button.", () => {
 //////////////////////////
 
 it('Add Facility Name.', () => {
-    cy.get('[placeholder="Enter Name"]').clear().type("Johar Khatoon Hospital, Now Health Care Centre")
+    cy.get('[placeholder="Enter Name"]').clear().type("Ansab Sajjad Hospital, Now Health Care Centre")
     expect(true).to.equal(true)
 
 });
@@ -29,68 +29,66 @@ it('Add Facility Email.', () => {
 });
 
 it('Add Facility Contracted By.', () => {
-    cy.get('[id="react-select-11-input"]').click({force:true}).wait(2000)
-    cy.get('#react-select-11-option-0').click({force: true})   /////===============Array Index 0
-    cy.wait(2000)
+    cy.get('#facilityContractedBy > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})   /////===============Array Index 0
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
     expect(true).to.equal(true)
 });
 
 
 it('Add Facility Phone number.', () => {
-    cy.get('[placeholder="1 (702) 123-4567"]').clear().type("13565955656")
+    cy.get('.form-control').clear().type("13565955656")
 });
 it('Add Facility Address.', () => {
-    cy.get(':nth-child(5) > .form-group > .form-controls > input').clear().type("St-1, Block 2, Federal B Area, Karachi")
+    cy.get('[name="facilityAddress"]').clear().type("St-1, Block 2, Federal B Area, Karachi")
     expect(true).to.equal(true)
 
 });
 
 
 it('Add Country.', () => {
-    cy.get('[id="react-select-12-input"]').click({force:true}).wait(2000)
-    cy.get('#react-select-12-option-0').click({force: true})   /////===============Array Index 1
-    cy.wait(3000)
+    cy.get('#country > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})   /////===============Array Index 1
+    cy.get('.custom-select__option:eq(0)').click().wait(1000)
     expect(true).to.equal(true)
 });
 
 it('Add State.', () => {
-    cy.get('[id="react-select-13-input"]').click({force:true}).wait(2000)
-    cy.get('#react-select-13-option-0').click({force: true})   /////===============Array Index 1
-    cy.wait(3000)
+    cy.get('#state > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})   /////===============Array Index 1
+    cy.get('.custom-select__option:eq(0)').click().wait(1000)
     expect(true).to.equal(true)
 });
 
 it('Add City.', () => {
-    cy.get('[id="react-select-14-input"]').click({force:true}).wait(2000)
-    cy.get('#react-select-14-option-0').click({force: true})   /////===============Array Index 1
-    cy.wait(3000)
+    cy.get('#city > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})   /////===============Array Index 1
+    cy.get('.custom-select__option:eq(0)').click().wait(1000)
     expect(true).to.equal(true)
 });
 
 
 it('Add Assigned To.', () => {
-    cy.get('[id="react-select-15-input"]').click({force:true}).wait(2000)
-    cy.get('#react-select-15-option-0').click({force: true})   /////===============Array Index 1
-    cy.wait(3000)
+    cy.get('#assignedTo > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})   /////===============Array Index 1
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
     expect(true).to.equal(true)
 });
 
+// ================================================ Rates ================================================
+
+
 it('Add Area of expertise.', () => {
-    cy.get('[id="react-select-16-input"]').click({force:true}).wait(2000)
-    cy.get('#react-select-16-option-0').click({force: true})   /////===============Array Index 1
-    cy.wait(3000)
+    cy.get('#areaOfExpertise > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})   /////===============Array Index 1
+    cy.get('.custom-select__option:eq(0)').click().wait(100)
     expect(true).to.equal(true)
 });
 
 it('Add Hourly rate.', () => {
-    cy.get('[data-testid="hourlyRate"]').type("12")
+    cy.get('[data-testid="hourlyRate"]').clear().type("12")
 });
 
 it('Add Bill Rate.', () => {
-    cy.get('[data-testid="billRate"]').type("40")
+    cy.get('[data-testid="billRate"]').clear().type("40")
 });
-it('Add Contact Name.', () => {
-    cy.get('[name="contacts.0.contactName"]').clear().type("Muhammad Azlaan");
+
+it('Add Timesheet Approver.', () => {
+    cy.get('[placeholder="Enter Timesheet Approver"]').clear().type("Muhammad Azlaan");
 });
 
 it('Add Contact Email.', () => {
@@ -168,15 +166,15 @@ it('Add Contact Email.', () => {
 
 
 it('F-13 Click on Created Button.', () => {
-    cy.get('[type="submit"]').click()
-cy.wait(1000)
+    cy.get('[data-testid="createbtn"]').click()
+    cy.wait(1000)
     expect(true).to.equal(true)
  
 });
 
 it('F-14 Verifying the Toast message.', () => {
     cy.wait(2000);
-    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Facility is Added Successfully')
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Facility has been added successfully')
     cy.wait(4000)
 });
 
