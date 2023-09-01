@@ -107,7 +107,6 @@ describe("let's Automate Icon Exchange.", function(){
     // IC_Others_Bonus()
     // IC_Bonus_Condition()
 
-
     Bulk_Facility_Assignment()
     // Bulk_add_provider()
     // Bulk_Area_of_expertise()
