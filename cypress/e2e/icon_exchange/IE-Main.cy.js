@@ -52,7 +52,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Delete_Provider()
     // Assign_Facility()
  
-    Add_Icon_Exchange_Facilities()
+    // Add_Icon_Exchange_Facilities()
     // edit_facility()
     // delete_facility()
     // Facility_Search()
@@ -73,7 +73,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Add_Pay_Rates()
     // Pay_Rate_Search()
     // Pay_Rate_View()
-    // Edit_Pay_Rate()
+    Edit_Pay_Rate()
     // Delete_Pay_Rate()
 
     // Add_Malpractice()
