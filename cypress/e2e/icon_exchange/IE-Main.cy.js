@@ -95,10 +95,10 @@ describe("let's Automate Icon Exchange.", function(){
     // admin_Expense_Condition()
 
     Hours_Completion_Bonus()
-    // Performance_Bonus()
-    // Refferal_Bonus()
-    // Incentive()
-    // Others_Bonus()
+    Performance_Bonus()
+    Refferal_Bonus()
+    Incentive()
+    Others_Bonus()
 
     // Icon_user_per_Login()
     

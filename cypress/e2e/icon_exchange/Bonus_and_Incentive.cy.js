@@ -53,7 +53,7 @@ it('B- Click on Save & Approve button. ', () => {
 
 it('Verifying the Toast message', () => {
     cy.wait(1000);
-    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus has been added successfully')
  });
 }
 
@@ -106,7 +106,7 @@ function Performance_Bonus(){
     
     it('Verifying the Toast message', () => {
         cy.wait(1000);
-        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus has been added successfully')
      });
     
     
@@ -140,7 +140,7 @@ function Refferal_Bonus(){
     
     it('B- 3 Select Reffered provider.', () => {
         cy.get('#referredProvider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(1)').click({force: true}).wait(1000);
            
     });
     
@@ -167,7 +167,7 @@ function Refferal_Bonus(){
     
     it('Verifying the Toast message', () => {
         cy.wait(1000);
-        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus has been added successfully')
      });
     
 }
@@ -221,7 +221,7 @@ function Incentive(){
     
     it('Verifying the Toast message', () => {
         cy.wait(1000);
-        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus has been added successfully')
      });
 }
 
@@ -268,7 +268,7 @@ function Others_Bonus(){
     
     it('Verifying the Toast message', () => {
         cy.wait(1000);
-        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus is Added Successfully')
+        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Bonus has been added successfully')
      });
 
 }
