@@ -12,8 +12,10 @@ const Super_Admin_data = {
    }
 
    const Icon_User_data = {
-    IC_Email : "ansab+2@troontechnologies.com",
-    IC_Password: "Admin@2022"
+    Correct_Email : "ansab+001@troontechnologies.com",
+    Correct_Password: "Admin@2022",
+    wrong_Email : "WrongEmail@gmail.com",
+    wrong_Password: "wrong_Password"
    }
 
 

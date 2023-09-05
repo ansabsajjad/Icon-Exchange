@@ -5,13 +5,13 @@ function Icon_user_per_Login(){
 
     it('Enter Email.', () => {
         cy.wait(2000);
-        cy.get(':nth-child(1) > .form-group > .form-controls > input').clear().type(Icon_User_data.IC_Email, {delay: 100})
+        cy.get(':nth-child(1) > .form-group > .form-controls > input').clear().type(Icon_User_data.Correct_Email, {delay: 100})
         expect(true).to.equal(true)
         
     });
 
     it(' Enter Password.', () => {
-        cy.get(':nth-child(2) > :nth-child(1) > .form-controls > input').clear().type(Icon_User_data.IC_Password , {delay: 100})
+        cy.get(':nth-child(2) > :nth-child(1) > .form-controls > input').clear().type(Icon_User_data.Correct_Password , {delay: 100})
         expect(true).to.equal(true)
     
     });

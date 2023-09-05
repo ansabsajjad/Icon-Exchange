@@ -6,7 +6,7 @@ import edit_facility from "./Edit Facility.cy"
 import Edit_Roles from "./Edit Role.cy"
 import Add_Icon_Exchange_Facilities from "./Facilities.cy"
 import Icon_Users from "./icon-users.cy"
-import Icon_Exchange_Login from "./Login.cy"
+import Icon_Admin_Login from "./Admin_Login.cy"
 import Provider_SignIN from "./Provider_SignIn.cy"
 import Provider_Signup from "./Provider_signup.cy"
 import Create_Icon_Roles from "./Roles.cy"
@@ -39,16 +39,19 @@ import { IC_Bonus_Condition, IC_Hours_Completion_Bonus, IC_Incentive, IC_Notific
 import Bulk_Facility_Assignment from "./Bulk_Facility_Assignment.cy"
 import Bulk_add_provider from "./Bulk_add_provider.cy"
 import Bulk_Area_of_expertise from "./Bulk_Area_of_expertise.cy"
+import Icon_user_Login from "./IC_Login.cy"
 
 
 describe("let's Automate Icon Exchange.", function(){
   
-    Icon_Exchange_URL()
-    Icon_Exchange_Login() 
+    Icon_Exchange_URL()    //=============> Done
+    // Icon_Admin_Login()     //=============> Done
+    Icon_user_Login()      //=============> Done
+
     
-    // Add_Provider()
-    // Provider_Search()
-    // View_Provider()   
+    // Add_Provider()     //=============> Done
+    // Provider_Search()     //=============> Done
+    View_Provider()      //=============> Done 
     // Delete_Provider()
     // Assign_Facility()
  
@@ -70,10 +73,10 @@ describe("let's Automate Icon Exchange.", function(){
     // Provider_Signup()
     // Provider_SignIN()
 
-    // Add_Pay_Rates()
+    // Add_Pay_Rates()     //=============> Done
     // Pay_Rate_Search()
-    // Pay_Rate_View()
-    Edit_Pay_Rate()
+    // Pay_Rate_View()     //=============> Done
+    // Edit_Pay_Rate()     //=============> Done
     // Delete_Pay_Rate()
 
     // Add_Malpractice()

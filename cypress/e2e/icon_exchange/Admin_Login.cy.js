@@ -3,7 +3,7 @@
 import Icon_Exchange_URL from "../../fixtures/Icon Exchange Credentials/IE_URL.cy";
 import {Super_Admin_data, Icon_User_data} from "../../fixtures/Icon Exchange Credentials/Login_Credentials.cy";
 
-function Icon_Exchange_Login() {
+function Icon_Admin_Login() {
    
 
     // Icon_Exchange_URL()
@@ -105,4 +105,4 @@ it('', () => {
 
 
 } 
-export default Icon_Exchange_Login;
+export default Icon_Admin_Login;
