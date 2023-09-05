@@ -45,8 +45,8 @@ import Icon_user_Login from "./IC_Login.cy"
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()    //=============> Done
-    // Icon_Admin_Login()     //=============> Done
-    Icon_user_Login()     //=============> Done
+    Icon_Admin_Login()     //=============> Done
+    // Icon_user_Login()     //=============> Done
 
     
     // Add_Provider()     //=============> Done
@@ -55,7 +55,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Delete_Provider()
     // Assign_Facility()
  
-    // Add_Icon_Exchange_Facilities()
+    // Add_Icon_Exchange_Facilities()  //=============> Done 
     // edit_facility()
     // delete_facility()
     // Facility_Search()
@@ -75,12 +75,12 @@ describe("let's Automate Icon Exchange.", function(){
 
     // Add_Pay_Rates()     //=============> Done
     // Pay_Rate_Search()
-    // Pay_Rate_View()     //=============> Done
-    // Edit_Pay_Rate()     //=============> Done
+    // Pay_Rate_View()     
+    // Edit_Pay_Rate()    
     // Delete_Pay_Rate()
 
     // Add_Malpractice()     //=============> Done  
-    Malpractice_Search()     //=============> Done
+    // Malpractice_Search()     //=============> Done
     // Update_Malpractice()
 
     // Provider_Login()
@@ -94,7 +94,7 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Admin_Expense()
     // admin_Expense_Condition()
 
-    // Hours_Completion_Bonus()
+    Hours_Completion_Bonus()
     // Performance_Bonus()
     // Refferal_Bonus()
     // Incentive()

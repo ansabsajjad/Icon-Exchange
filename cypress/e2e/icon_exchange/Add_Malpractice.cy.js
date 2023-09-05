@@ -9,7 +9,7 @@ function Add_Malpractice(){
 
     it('AM- 2 Click on Malpractice.', () => {
         cy.get('[data-testid="mainmenu-providers"] > .float-end').click()
-        cy.get('[data-testid="submenu-malpractice-rates"]').click()
+        cy.get('[data-testid="submenu-malpractice-rates"]').click().wait(3000)
     });
 
 

@@ -22,7 +22,7 @@ function Pay_Rate_Search(){
          it(' Clear Search filter.', () => {
             cy.get('.left-icon').click({force: true})
             cy.wait(2000)
-            cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+            cy.get('[data-testid="clear"]').click({force: true})
             cy.wait(2000)
         
          });
@@ -46,7 +46,7 @@ it('Search by Facility Name.', () => {
  it(' Clear Search filter.', () => {
     cy.get('.left-icon').click({force: true})
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+    cy.get('[data-testid="clear"]').click({force: true})
     cy.wait(2000)
 
  });
@@ -70,7 +70,7 @@ it('Search by Area of expertise.', () => {
  it(' Clear Search filter.', () => {
     cy.get('.left-icon').click({force: true})
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+    cy.get('[data-testid="clear"]').click({force: true})
     cy.wait(2000)
 
  });
@@ -94,7 +94,7 @@ it('Search by Provider Working for.', () => {
  it(' Clear Search filter.', () => {
     cy.get('.left-icon').click({force: true})
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+    cy.get('[data-testid="clear"]').click({force: true})
     cy.wait(2000)
 
  });
@@ -117,7 +117,7 @@ it('Search by Rate Start Date', () => {
 it(' Clear Search filter.', () => {
    cy.get('.left-icon').click({force: true})
    cy.wait(2000)
-   cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+   cy.get('[data-testid="clear"]').click({force: true})
    cy.wait(2000)
 
 });
@@ -141,7 +141,7 @@ it('Search by Rate End Date', () => {
  it(' Clear Search filter.', () => {
     cy.get('.left-icon').click({force: true})
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+    cy.get('[data-testid="clear"]').click({force: true})
     cy.wait(2000)
 
  });
@@ -164,7 +164,7 @@ it('Search by Rate End Date', () => {
  it(' Clear Search filter.', () => {
     cy.get('.left-icon').click({force: true})
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+    cy.get('[data-testid="clear"]').click({force: true})
     cy.wait(2000)
 
  });
@@ -188,7 +188,7 @@ it('Search by Guaranteed Hours.', () => {
  it(' Clear Search filter.', () => {
     cy.get('.left-icon').click({force: true})
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+    cy.get('[data-testid="clear"]').click({force: true})
     cy.wait(2000)
 
  });
@@ -213,7 +213,7 @@ it('Search by Billing Rate.', () => {
  it(' Clear Search filter.', () => {
     cy.get('.left-icon').click({force: true})
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+    cy.get('[data-testid="clear"]').click({force: true})
     cy.wait(2000)
 
  });
@@ -236,7 +236,7 @@ it('Search by Billing Rate.', () => {
  it(' Clear Search filter.', () => {
     cy.get('.left-icon').click({force: true})
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+    cy.get('[data-testid="clear"]').click({force: true})
     cy.wait(2000)
 
  });
@@ -260,7 +260,7 @@ it('Search by Billing Rate.', () => {
  it(' Clear Search filter.', () => {
     cy.get('.left-icon').click({force: true})
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+    cy.get('[data-testid="clear"]').click({force: true})
     cy.wait(2000)
 
  });
