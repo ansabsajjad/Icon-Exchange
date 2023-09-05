@@ -45,8 +45,8 @@ import Icon_user_Login from "./IC_Login.cy"
 describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()    //=============> Done
-    Icon_Admin_Login()     //=============> Done
-    // Icon_user_Login()     //=============> Done
+    // Icon_Admin_Login()     //=============> Done
+    Icon_user_Login()     //=============> Done
 
     
     // Add_Provider()     //=============> Done
@@ -89,16 +89,16 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Provider_Expense()
     // Provider_Expense_Search()
     // Provider_condition()
-    // Admin_Expense()
-    // View_Admin_Expense()
-    // Edit_Admin_Expense()
-    // admin_Expense_Condition()
+    // Admin_Expense()              //=============> Done
+    // View_Admin_Expense()         //=============> Done
+    // Edit_Admin_Expense()             //=============> Done
+    admin_Expense_Condition()
 
-    Hours_Completion_Bonus()
-    Performance_Bonus()
-    Refferal_Bonus()
-    Incentive()
-    Others_Bonus()
+    // Hours_Completion_Bonus()  //=============> Done
+    // Performance_Bonus()   //=============> Done
+    // Refferal_Bonus()  //=============> Done
+    // Incentive()   //=============> Done
+    // Others_Bonus()    //=============> Done
 
     // Icon_user_per_Login()
     
