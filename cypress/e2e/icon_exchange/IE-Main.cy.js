@@ -46,7 +46,7 @@ describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()    //=============> Done
     // Icon_Admin_Login()     //=============> Done
-    Icon_user_Login()      //=============> Done
+    Icon_user_Login()     //=============> Done
 
     
     // Add_Provider()     //=============> Done
