@@ -51,7 +51,7 @@ describe("let's Automate Icon Exchange.", function(){
     
     // Add_Provider()     //=============> Done
     // Provider_Search()     //=============> Done
-    View_Provider()      //=============> Done 
+    // View_Provider()      //=============> Done 
     // Delete_Provider()
     // Assign_Facility()
  
@@ -79,8 +79,8 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Pay_Rate()     //=============> Done
     // Delete_Pay_Rate()
 
-    // Add_Malpractice()
-    // Malpractice_Search()
+    // Add_Malpractice()     //=============> Done  
+    Malpractice_Search()     //=============> Done
     // Update_Malpractice()
 
     // Provider_Login()
