@@ -19,7 +19,7 @@ it('Search First Name.', () => {
 it('Clear Filter.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click()
+    cy.get('[data-testid="clear"]').click()
     cy.wait(2000)
 
 });
@@ -37,7 +37,7 @@ it('Search Last Name.', () => {
 it('Clear Filter.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click()
+    cy.get('[data-testid="clear"]').click()
     cy.wait(2000)
 
 });
@@ -57,7 +57,7 @@ it('Search Email.', () => {
 it('Clear Filter.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click()
+    cy.get('[data-testid="clear"]').click()
     cy.wait(2000)
 
 });
@@ -76,7 +76,7 @@ it('Search Company.', () => {
 it('Clear Filter.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
-    cy.get(':nth-child(2) > :nth-child(1) > .btn').click()
+    cy.get('[data-testid="clear"]').click()
     cy.wait(2000)
 
 });

@@ -46,16 +46,16 @@ describe("let's Automate Icon Exchange.", function(){
   
     Icon_Exchange_URL()    //=============> Done
     // Icon_Admin_Login()     //=============> Done
-    Icon_user_Login()      //=============> Done
+    Icon_user_Login()     //=============> Done
 
     
     // Add_Provider()     //=============> Done
     // Provider_Search()     //=============> Done
-    View_Provider()      //=============> Done 
+    // View_Provider()      //=============> Done 
     // Delete_Provider()
     // Assign_Facility()
  
-    // Add_Icon_Exchange_Facilities()
+    // Add_Icon_Exchange_Facilities()  //=============> Done 
     // edit_facility()
     // delete_facility()
     // Facility_Search()
@@ -75,12 +75,12 @@ describe("let's Automate Icon Exchange.", function(){
 
     // Add_Pay_Rates()     //=============> Done
     // Pay_Rate_Search()
-    // Pay_Rate_View()     //=============> Done
-    // Edit_Pay_Rate()     //=============> Done
+    // Pay_Rate_View()     
+    // Edit_Pay_Rate()    
     // Delete_Pay_Rate()
 
-    // Add_Malpractice()
-    // Malpractice_Search()
+    // Add_Malpractice()     //=============> Done  
+    // Malpractice_Search()     //=============> Done
     // Update_Malpractice()
 
     // Provider_Login()
@@ -89,16 +89,16 @@ describe("let's Automate Icon Exchange.", function(){
     // Edit_Provider_Expense()
     // Provider_Expense_Search()
     // Provider_condition()
-    // Admin_Expense()
-    // View_Admin_Expense()
-    // Edit_Admin_Expense()
-    // admin_Expense_Condition()
+    // Admin_Expense()              //=============> Done
+    // View_Admin_Expense()         //=============> Done
+    // Edit_Admin_Expense()             //=============> Done
+    admin_Expense_Condition()
 
-    // Hours_Completion_Bonus()
-    // Performance_Bonus()
-    // Refferal_Bonus()
-    // Incentive()
-    // Others_Bonus()
+    // Hours_Completion_Bonus()  //=============> Done
+    // Performance_Bonus()   //=============> Done
+    // Refferal_Bonus()  //=============> Done
+    // Incentive()   //=============> Done
+    // Others_Bonus()    //=============> Done
 
     // Icon_user_per_Login()
     

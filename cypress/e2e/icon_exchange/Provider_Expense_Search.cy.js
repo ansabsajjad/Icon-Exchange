@@ -22,7 +22,7 @@ function Provider_Expense_Search(){
      it(' Clear Search filter.', () => {
         cy.get('.left-icon').click({force: true})
         cy.wait(2000)
-        cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+        cy.get('[data-testid="clear"]').click({force: true})
         cy.wait(2000)
     
      });
@@ -46,7 +46,7 @@ function Provider_Expense_Search(){
      it(' Clear Search filter.', () => {
         cy.get('.left-icon').click({force: true})
         cy.wait(2000)
-        cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+        cy.get('[data-testid="clear"]').click({force: true})
         cy.wait(2000)
     
      });
@@ -69,7 +69,7 @@ function Provider_Expense_Search(){
      it(' Clear Search filter.', () => {
         cy.get('.left-icon').click({force: true})
         cy.wait(2000)
-        cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+        cy.get('[data-testid="clear"]').click({force: true})
         cy.wait(2000)
     
      });
@@ -91,7 +91,7 @@ function Provider_Expense_Search(){
      it(' Clear Search filter.', () => {
         cy.get('.left-icon').click({force: true})
         cy.wait(2000)
-        cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+        cy.get('[data-testid="clear"]').click({force: true})
         cy.wait(2000)
     
      });
@@ -115,7 +115,7 @@ function Provider_Expense_Search(){
      it(' Clear Search filter.', () => {
         cy.get('.left-icon').click({force: true})
         cy.wait(2000)
-        cy.get(':nth-child(2) > :nth-child(1) > .btn').click({force: true})
+        cy.get('[data-testid="clear"]').click({force: true})
         cy.wait(2000)
     
      });
