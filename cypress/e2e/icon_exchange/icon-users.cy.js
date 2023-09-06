@@ -3,8 +3,9 @@ import Random_Textt from "./Random_Text";
 function Icon_Users() {
 
 it('IU-1 Click on Icon users.', () => {
-    cy.get(':nth-child(4) > .relative > .cursor-pointer > :nth-child(2)').click()    
+    cy.get('[data-testid="mainmenu-icon-users"] > .float-end').click()    
     cy.wait(4000);
+    cy.get('[data-testid="submenu-users-listing"]').click().wait(1000)
 expect(true).to.equal(true)
 });
 
@@ -12,64 +13,68 @@ expect(true).to.equal(true)
 
 
 it('IU-2 Click on the Create icon user.', () => {
-    cy.get('.px-5').click()
+    cy.get('[data-testid="create-icon-user-btn"]').click().wait(3000)
 expect(true).to.equal(true)
 });
 
 
 it('IU-3 Enter First Name.', () => {
-    cy.get(':nth-child(1) > .form-group > .form-controls > input').type("ANSAB  " + Random_Textt(), {delay:150})
+    cy.get('[placeholder="Enter First Name"]').type("ANSAB  " + Random_Textt(), {delay:150})
 // expect(true).to.equal(true)
 });
 
 
 it('IU-4 Enter Last NAme.', () => {
-    cy.get(':nth-child(2) > .form-group > .form-controls > input').type("XYZ " + Random_Textt(), {delay:150})
+    cy.get('[placeholder="Enter Last Name"]').type("XYZ " + Random_Textt(), {delay:150})
 expect(true).to.equal(true)
 });
 
 
 it('IU-5 Enter Email.', () => {
-    cy.get(':nth-child(3) > .form-group > .form-controls > input').type("ansab+" + Random_Textt() + "@troontechnologies.com", {delay:150})
+    cy.get('[placeholder="Enter Email"]').type("ansab+" + Random_Textt() + "@troontechnologies.com", {delay:150})
 expect(true).to.equal(true)
 });
 
 
 it('IU-6 Enter Phone Number.', () => {
-    cy.get('.form-control').type("456789537", {delay:150})
+    cy.get('.form-control').type("456784554953647", {delay:150})
 expect(true).to.equal(true)
 });
 
 
 it('IU-7 Enter Date of Birth.', () => {
-    cy.get('.customdate').type("11/28/2012").type('{enter}')
+    cy.get('#birthDate').type("11/28/2012").type('{enter}')
 expect(true).to.equal(true)
 });
 
 it('IU-8 Enter Role.', () => {
-    cy.get(':nth-child(6) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("Icon User").type('{enter}').wait(2000)
+    cy.get('#role > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().wait(1000)
+    cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);
+
 expect(true).to.equal(true)
 });
 it('IU-9 Enter Department.', () => {
-    cy.get(':nth-child(7) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("accounts").type('{enter}').wait(2000)
-expect(true).to.equal(true)
+    cy.get('#department > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().wait(1000)
+    cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);
+    expect(true).to.equal(true)
 });
 
 it('IU-10 Enter Company Name.', () => {
-    cy.get(':nth-child(8) > .form-group > .form-controls > .css-b62m3t-container > .custom-select__control > .custom-select__value-container > .custom-select__input-container').type("NOn icon exchange").type('{enter}').wait(2000)
-expect(true).to.equal(true)
+    cy.get('#company > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click().wait(1000)
+    cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);
+    expect(true).to.equal(true)
 
 });
 
 it('IU-11 Enter Password.', () => {
-    cy.get(':nth-child(9) > .form-group > .form-controls > input').type("Admin@123", {delay:150})
+    cy.get(':nth-child(9) > .form-group > .form-controls > input').type("Admin@2022", {delay:150})
     cy.get(':nth-child(9) > .form-group > .form-controls > .ico').click()
 expect(true).to.equal(true)
 });
 
 it('IU-12 Enter Confirm Password.', () => {
-    cy.get(':nth-child(10) > .form-group > .form-controls > input').type("Admin@123", {delay:150})
-    cy.get(':nth-child(10) > .form-group > .form-controls > .ico').click()
+    cy.get(':nth-child(10) > .form-group > .form-controls > input').type("Admin@2022", {delay:150})
+    cy.get(':nth-child(10) > .form-group > .form-controls > input').click()
 expect(true).to.equal(true)
 });
 
@@ -80,7 +85,7 @@ expect(true).to.equal(true)
 });
 it('IU-14 Verifying the Toast message.', () => {
     cy.wait(2000);
-    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Icon User is Created Successfully')
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','ICON user has been created successfully')
     cy.wait(4000)
 });
 

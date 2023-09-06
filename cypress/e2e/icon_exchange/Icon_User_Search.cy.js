@@ -1,11 +1,16 @@
 
 
 function Icon_Users_Search() {
-it('Click on Icon Users.', () => {
-    cy.get(':nth-child(4) > .relative > .cursor-pointer > :nth-child(2)').click()
-});
 
-it('Search First Name.', () => {
+    it('IU-1 Click on Icon users.', () => {
+        cy.get('[data-testid="mainmenu-icon-users"] > .float-end').click()    
+        cy.wait(4000);
+        cy.get('[data-testid="submenu-users-listing"]').click().wait(1000)
+    expect(true).to.equal(true)
+    });
+    
+    
+it('Search By First Name.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
     cy.get('#firstName').click().type("ANSAB")
@@ -24,11 +29,11 @@ it('Clear Filter.', () => {
 
 });
 
-it('Search Last Name.', () => {
+it('Search By Last Name.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
     cy.get('#lastName').click().type("imtiaz")
-    cy.get(':nth-child(2) > :nth-child(2) > .btn')
+   cy.get('[data-testid="search"]').click({force:true})
     cy.wait(5000)
 
 
@@ -44,11 +49,11 @@ it('Clear Filter.', () => {
 
 
 
-it('Search Email.', () => {
+it('Search By Email.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
     cy.get('#email').click().type("troontechnologies.com")
-    cy.get(':nth-child(2) > :nth-child(2) > .btn')
+   cy.get('[data-testid="search"]').click({force:true})
     cy.wait(5000)
 
 
@@ -63,11 +68,12 @@ it('Clear Filter.', () => {
 });
 
 
-it('Search Company.', () => {
+it('Search By Company.', () => {
     cy.get('.left-icon').click()
     cy.wait(2000)
-    cy.get('.custom-select__input-container').click().type('{enter}') 
-    cy.get(':nth-child(2) > :nth-child(2) > .btn')
+    cy.get('#company > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
+    cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);
+   cy.get('[data-testid="search"]').click({force:true})
     cy.wait(5000)
 
 
@@ -82,6 +88,44 @@ it('Clear Filter.', () => {
 });
 
 
+it('Search by Created At.', () => {
+    cy.get('.left-icon').click()
+    cy.wait(2000)
+    cy.get('#createdAt').type("cy.get('#createdAt')")
+      cy.get('[data-testid="search"]').click({force:true})
+    cy.wait(5000)
+
+
+});
+
+it('Clear Filter.', () => {
+    cy.get('.left-icon').click()
+    cy.wait(2000)
+    cy.get('[data-testid="clear"]').click()
+    cy.wait(2000)
+
+});
+
+
+
+it('Search By Created By.', () => {
+    cy.get('.left-icon').click()
+    cy.wait(2000)
+    cy.get('#createdBy > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
+    cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);
+   cy.get('[data-testid="search"]').click({force:true})
+    cy.wait(5000)
+
+
+});
+
+it('Clear Filter.', () => {
+    cy.get('.left-icon').click()
+    cy.wait(2000)
+    cy.get('[data-testid="clear"]').click()
+    cy.wait(2000)
+
+});
 
 
 
