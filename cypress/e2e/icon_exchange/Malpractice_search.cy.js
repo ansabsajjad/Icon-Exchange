@@ -99,7 +99,8 @@ function Malpractice_Search(){
         cy.get('.left-icon').click({force: true})
         cy.wait(2000)
         cy.get('#createdAt').click({force:true}).type("09/18/2023")
-
+        cy.get('[data-testid="search"]').click({force:true})
+        cy.wait(5000)
 
     });
 
@@ -116,9 +117,10 @@ function Malpractice_Search(){
     it('Search by Created By', () => {
         cy.get('.left-icon').click({force: true})
   cy.wait(2000)
-  cy.get('#createdBy').click({force:true})
+    cy.get('#createdBy > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(1000)
   cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
-   
+  cy.get('[data-testid="search"]').click({force:true})
+  cy.wait(5000)
 });
 
 it('Clear Filter.', () => {
