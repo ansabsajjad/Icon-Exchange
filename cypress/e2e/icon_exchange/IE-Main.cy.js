@@ -60,6 +60,7 @@ import Bulk_Area_of_expertise from "./Bulk_Area_of_expertise.cy";
 import Icon_user_Login from "./IC_Login.cy";
 import Update_Icon_user from "./Update_Icon_user.cy";
 import Timesheet_Reminder from "./timesheet_reminder.cy";
+import Timesheet from "./Timesheet.cy";
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL(); //=============> Done
@@ -116,7 +117,9 @@ describe("let's Automate Icon Exchange.", function() {
   // Incentive()   //=============> Done
   // Others_Bonus()    //=============> Done
 
-  Timesheet_Reminder()
+  // Timesheet_Reminder()   //=============> Done
+
+  Timesheet()
 
   // Icon_user_per_Login()
  
