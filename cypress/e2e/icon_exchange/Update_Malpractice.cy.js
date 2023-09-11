@@ -34,12 +34,12 @@ function Update_Malpractice() {
 
   it("UM- Update States.", () => {
     cy.get(".custom-select__single-value").click({ force: true }).wait(2000);
-    cy.get(".custom-select__option:eq(5)").click({ force: true }).wait(2000);
+    cy.get(".custom-select__option:eq(9)").click({ force: true }).wait(2000);
   });
 
   it("UM- Update Hourly Rate.", () => {
     cy
-      .get('.form-group > .mb-12 > .form-controls > [data-testid="hourlyRate"]')
+      .get('.form-group > .mb-12 > .form-controls > [data-testid="hourlyRate"]').wait(1000)
       .clear()
       .type("40");
     cy.wait(2000);
@@ -49,7 +49,7 @@ function Update_Malpractice() {
     cy
       .get(
         ".form-group > .form-controls > .react-datepicker-wrapper > .react-datepicker__input-container > #effectiveStartDate"
-      ).clear().wait(1000)
+      ).wait(1000).clear().wait(1000)
       .type("07/19/2023")
       .wait("2000");
   });
@@ -67,7 +67,7 @@ function Update_Malpractice() {
     cy
       .get('[data-testid="handleGlobalMalpracticeUpdate"]')
       .click({ force: true })
-      .wait(3000);
+      .wait(4000);
   });
 
   it("UM- Click on cross button.", () => {
@@ -75,7 +75,7 @@ function Update_Malpractice() {
   });
 
   it("UM-3 Scroll Listing to the Right Side. ", () => {
-    cy.get(".tableresponsive").scrollTo("right", { duration: 2000 }).wait(2000);
+    cy.get(".tableresponsive").scrollTo("right", { duration: 2000 }, {ensureScrollable: false}).wait(2000);
   });
 
   it("UM-4 Click on 3 dots.", () => {
@@ -94,13 +94,13 @@ function Update_Malpractice() {
   it("UM-6 Update Malpractice Insurance Provider", () => {
     cy
       .get('[id="malpracticeInsuranceProvider"]')
-      .click({ force: true })
+      .click()
       .wait(2000);
-    cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);
+    cy.get(".custom-select__option:eq(1)").click({ force: true }).wait(1000);
   });
 
   it("UM-7 Update Areas of Expertise.", () => {
-    cy.get('[id="areaOfExpertise"]').click({ force: true }).wait(2000);
+    cy.get('[id="areaOfExpertise"]').click().wait(2000);
     cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);
   });
 

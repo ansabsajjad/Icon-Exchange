@@ -99,7 +99,7 @@ describe("let's Automate Icon Exchange.", function() {
 
   // Add_Malpractice()     //=============> Done
   // Malpractice_Search()     //=============> Done
-  // Update_Malpractice();  //=============> Done
+  Update_Malpractice();  //=============> Done
 
   // Provider_Login()
   // Provider_Expense()
@@ -120,7 +120,7 @@ describe("let's Automate Icon Exchange.", function() {
 
   // Timesheet_Reminder()   //=============> Done
   // Timesheet()
-  Pay_Periods()
+  // Pay_Periods()
 
   // Icon_user_per_Login()
  
