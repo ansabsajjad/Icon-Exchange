@@ -59,6 +59,7 @@ import Bulk_add_provider from "./Bulk_add_provider.cy";
 import Bulk_Area_of_expertise from "./Bulk_Area_of_expertise.cy";
 import Icon_user_Login from "./IC_Login.cy";
 import Update_Icon_user from "./Update_Icon_user.cy";
+import Timesheet_Reminder from "./timesheet_reminder.cy";
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL(); //=============> Done
@@ -115,6 +116,8 @@ describe("let's Automate Icon Exchange.", function() {
   // Incentive()   //=============> Done
   // Others_Bonus()    //=============> Done
 
+  Timesheet_Reminder()
+
   // Icon_user_per_Login()
  
   // IC_Notification()
@@ -128,4 +131,9 @@ describe("let's Automate Icon Exchange.", function() {
   // Bulk_Facility_Assignment()
   // Bulk_add_provider()
   // Bulk_Area_of_expertise()
+
+
+
+
+
 });
