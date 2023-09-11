@@ -140,11 +140,8 @@ function Timesheet(){
 
 
     it('Click on Submit for Approval.', () => {
-        cy.get('[data-testid="submit-approval"]').click()
-    });
-
-
-    it('', () => {
+        cy.get('[data-testid="submit-approval"]').click().wait(2000)
+   
         // Check if the signature modal body is visible
 cy.get('.modal-body').should('be.visible').then(($modalBody) => {
     if ($modalBody.length > 0) {
