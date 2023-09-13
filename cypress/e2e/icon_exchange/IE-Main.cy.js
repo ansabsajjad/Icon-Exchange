@@ -77,9 +77,9 @@ describe("let's Automate Icon Exchange.", function() {
   // Assign_Facility()    //=============> Done
 
   // Add_Icon_Exchange_Facilities()  //=============> Done
-  // edit_facility()
-  // delete_facility()
-  // Facility_Search()
+  // edit_facility()   //=============> Done
+  // delete_facility()    //=============> Done
+  Facility_Search()    //=============> Done
 
   // Update_Icon_user()   //=============> Done
   // Icon_Users()         //=============> Done
@@ -97,7 +97,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Pay_Rate_Search()      //=============> Done
   // Pay_Rate_View()      //=============> Done
   // Edit_Pay_Rate()       //=============> Done
-  Delete_Pay_Rate()      //=============> Done
+  // Delete_Pay_Rate()      //=============> Done
 
   // Add_Malpractice()     //=============> Done
   // Malpractice_Search()     //=============> Done
