@@ -1,7 +1,7 @@
 function Timesheet(){
 
     it('Click on Timesheet', () => {
-        cy.get('[data-testid="mainmenu-time-sheets"]').click({force: true})
+        cy.get('[data-testid="mainmenu-time-sheets"]').click({force: true}).wait(3000)
     });
 
     it('Click on Add Time Sheet Button.', () => {

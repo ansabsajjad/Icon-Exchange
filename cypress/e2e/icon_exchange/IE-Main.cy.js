@@ -62,6 +62,7 @@ import Update_Icon_user from "./Update_Icon_user.cy";
 import Timesheet_Reminder from "./timesheet_reminder.cy";
 import Timesheet from "./Timesheet.cy";
 import Pay_Periods from "./Pay_Periods.cy";
+import Timesheet_Search from "./Timesheet_Search.cy";
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL(); //=============> Done
@@ -77,9 +78,9 @@ describe("let's Automate Icon Exchange.", function() {
   // Assign_Facility()    //=============> Done
 
   // Add_Icon_Exchange_Facilities()  //=============> Done
-  // edit_facility()
-  // delete_facility()
-  // Facility_Search()
+  // edit_facility()   //=============> Done
+  // delete_facility()    //=============> Done
+  // Facility_Search()    //=============> Done
 
   // Update_Icon_user()   //=============> Done
   // Icon_Users()         //=============> Done
@@ -97,7 +98,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Pay_Rate_Search()      //=============> Done
   // Pay_Rate_View()      //=============> Done
   // Edit_Pay_Rate()       //=============> Done
-  Delete_Pay_Rate()      //=============> Done
+  // Delete_Pay_Rate()      //=============> Done
 
   // Add_Malpractice()     //=============> Done
   // Malpractice_Search()     //=============> Done
@@ -122,17 +123,16 @@ describe("let's Automate Icon Exchange.", function() {
 
   // Timesheet_Reminder()   //=============> Done
   // Timesheet()      //=============> Done
+  Timesheet_Search()
   // Pay_Periods()    //=============> Done
 
-  // Icon_user_per_Login()
- 
-  // IC_Notification()
-  // IC_Hours_Completion_Bonus()
-  // IC_Performance_Bonus()
-  // IC_Refferal_Bonus()
-  // IC_Incentive()
-  // IC_Others_Bonus()
-  // IC_Bonus_Condition()
+   // IC_Notification()    //=============> Done
+  // IC_Hours_Completion_Bonus()  //=============> Done
+  // IC_Performance_Bonus()   //=============> Done
+  // IC_Refferal_Bonus()  //=============> Done
+  // IC_Incentive()   //=============> Done
+  // IC_Others_Bonus()  //=============> Done
+  // IC_Bonus_Condition()   //=============> Done
 
   // Bulk_Facility_Assignment()     //=============> Done
   // Bulk_add_provider()     //=============> Done

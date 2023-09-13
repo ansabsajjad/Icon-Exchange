@@ -96,7 +96,7 @@ function Icon_user_Login() {
 	});
 
 	it("", () => {
-		// cy.wait(6000)
+		cy.wait(3000)
 	});
 
 	it("", () => {});
