@@ -70,7 +70,7 @@ it('F-14 Verifying the Toast message.', () => {
 it('Select country', () => {
 
     cy.get('#countryMand > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})
-    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
     expect(true).to.equal(true)
 });
 
@@ -79,12 +79,12 @@ it('Select country', () => {
 
 it('Select State.', () => {
     cy.get('#stateMand > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
-    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
 });
 
 it('Select City', () => {
     cy.get('#cityMand > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true})
-    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
 });
 
 it('Enter Postal code.', () => {
@@ -97,7 +97,7 @@ it('Enter Distance.', () => {
 
 it('Select Time Zone.', () => {
     cy.get('#timeZone > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
 });
 
 

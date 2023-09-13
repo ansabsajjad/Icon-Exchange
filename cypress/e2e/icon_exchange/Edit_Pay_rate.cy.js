@@ -1,13 +1,15 @@
 function Edit_Pay_Rate(){
+
+    
   //===================> which list do you want to test.?
   const index = 2;
 
-  it('Click on the Provider rates.', () => {
-      cy.get('[data-testid="mainmenu-providers"] > .float-end').click({force:true}).wait(1000)
-      cy.get('[data-testid="submenu-provider-rates"] > :nth-child(2)').click({force:true}).wait(1000)
-      expect(true).to.equal(true)
-  });
-  
+  it('AP -1 Click on Provider Rates.', () => {
+    cy.get('[data-testid="mainmenu-providers"]').click()
+    cy.get('[data-testid="submenu-provider-rates"]').click()
+    expect(true).to.equal(true)
+});
+
 
   
   
