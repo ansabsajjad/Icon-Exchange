@@ -52,6 +52,7 @@ it('EX- Enter Description.', () => {
 
 it('Click on Update button.', () => {
     cy.get('[data-testid="save-expense"]').click({force:true})
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Expense has been updated successfully')
 });
 
 

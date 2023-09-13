@@ -1,16 +1,9 @@
 
 function Provider_condition(){
 
-   
-  it('Click on Settings.', () => {
-    cy.get('[data-testid="mainmenu-4"] > .float-end').click()
-    cy.wait(2000)
-    expect(true).to.equal(true)
-    });
-
-    it('Click on Expenses.', () => {
-        cy.get('[data-testid="submenu-3"]').click().wait(2000)
-    });
+  it('EX- Click Expenses. ', () => {
+    cy.get('[data-testid="mainmenu-expenses"]').click({force:true}).wait(2000)
+});
 
 
 it('Scroll to right.', () => {
@@ -19,15 +12,14 @@ it('Scroll to right.', () => {
 
 it('Check condition.', () => {
     
-  cy.get(':nth-child(1) > :nth-child(6) > .text-capitalize').then(($td) => {
+  cy.get(':nth-child(1) > :nth-child(5) > .text-capitalize').then(($td) => {
         const value = $td.text().trim();
         if (value === 'approved') {
           cy.wait(2000)
-          // Provider_Click()
-          ///////
-          cy.get(':nth-child(1) > :nth-child(9) > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click().wait(2000)
+          
+          cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click().wait(2000)
     
-          cy.contains('View').click({force: true}).wait(3000)
+          cy.get('[data-testid="view-expense"]').click({force: true}).wait(3000)
         
       
               cy.scrollTo('bottom').wait(3000)
@@ -36,15 +28,23 @@ it('Check condition.', () => {
         } else {
           cy.wait(3000)
 
-          //Provider_Edit()
-          ////////////
-          cy.get(':nth-child(1) > :nth-child(9) > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click().wait(2000)
+          cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click().wait(2000)
    
-          cy.contains('View').click({force: true}).wait(3000)
-          cy.scrollTo('bottom').wait(3000)
-          cy.scrollTo('top').wait(3000)
-          cy.get('.d-md-flex > button.btn').click().wait(3000)
-          cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Expense has been approved')
+          cy.get('[data-testid="edit-expense"]').click({force: true}).wait(3000)
+         
+
+  cy.get('[id="expenses.0.expenseType"]').click().wait(2000)
+  cy.get(".custom-select__option:eq(1)").click({ force: true }).wait(1000);   /////===============Array Index 0
+  cy.wait(2000)
+
+  cy.get('[data-testid="expenses.0.totalAmount"]').type("200")
+
+  cy.get('#rangeSelect').click().wait(1000)
+  cy.get('[name="expenses.0.expenseSpentStartDate"]').click({force:true}).type("09/16/2023 - 09/28/2023")
+  cy.get('[name="expenses.0.description"]').type("This is updated description.")
+  cy.get('[data-testid="save-expense"]').click({force:true})
+
+          cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Expense has been updated successfully')
         }
       });
 });
