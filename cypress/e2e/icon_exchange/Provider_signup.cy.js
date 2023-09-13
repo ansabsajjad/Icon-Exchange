@@ -1,5 +1,5 @@
 import Icon_Exchange_URL from "../../fixtures/Icon Exchange Credentials/IE_URL.cy";
-// import Provider_data from "../../fixtures/Icon Exchange Credentials/Provider_Data.cy";
+// import {Super_Admin_data, Icon_User_data,  Provider_data} from "../../fixtures/Icon Exchange Credentials/Login_Credentials.cy";
 import {Provider_data} from "../../fixtures/Icon Exchange Credentials/Login_Credentials.cy";
 import Random_Textt from "./Random_Text";
 
@@ -39,7 +39,7 @@ it('7- Agree with terms and condition.', () => {
 });
  it('8- Click on Next Button.', () => {
     cy.get('.btn').click({force: true})
-    cy.wait(3000)
+    cy.wait(30000)
  });
 
 // it('9- Go to Login page.', () => {
