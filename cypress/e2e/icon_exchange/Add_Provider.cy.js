@@ -7,9 +7,7 @@ it('Click on provider.', () => {
     cy.get('[data-testid="submenu-providers-listing"] > :nth-child(2)').click()
     expect(true).to.equal(true)
 
-});
-
-
+}); 
 
 it('1- Click on add Provider.', () => {
     cy.get('.px-5').click()

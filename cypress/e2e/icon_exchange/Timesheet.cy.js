@@ -26,7 +26,7 @@ function Timesheet(){
 
     it('Select Provider.', () => {
         cy.get('#provider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force: true})
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(2000);
+        cy.get('.custom-select__option:eq(4)').click({force: true}).wait(2000);
     });
 
 
