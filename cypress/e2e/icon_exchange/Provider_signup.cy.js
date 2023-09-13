@@ -1,8 +1,6 @@
 import Icon_Exchange_URL from "../../fixtures/Icon Exchange Credentials/IE_URL.cy";
 // import Provider_data from "../../fixtures/Icon Exchange Credentials/Provider_Data.cy";
 import {Provider_data} from "../../fixtures/Icon Exchange Credentials/Login_Credentials.cy";
-
-
 import Random_Textt from "./Random_Text";
 
 function Provider_Signup() {

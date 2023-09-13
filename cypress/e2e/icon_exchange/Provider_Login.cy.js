@@ -3,7 +3,6 @@ import Provider_data from "../../fixtures/Icon Exchange Credentials/Provider_Dat
 function Provider_Login(){
 
 
-    
     it('2- Logo should be present.', () => {
         cy.get('.logo').should('be.visible')
           

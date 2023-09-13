@@ -4,9 +4,6 @@ import Provider_test from "./test.cy";
 
 function Provider_SignIN() {
 
-
-
-
     it('2- Logo should be present.', () => {
         cy.get('.logo').should('be.visible')
           
