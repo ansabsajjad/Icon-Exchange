@@ -65,81 +65,90 @@ import Pay_Periods from "./Pay_Periods.cy";
 import Timesheet_Search from "./Timesheet_Search.cy";
 
 describe("let's Automate Icon Exchange.", function() {
-  Icon_Exchange_URL(); //=============> Done
-  // Icon_Admin_Login()     //=============> Done
-  Icon_user_Login();   //=============> Done
-  // Provider_Login()      //=============> Done
+  Icon_Exchange_URL();          //=============> Done
+  // Icon_Admin_Login()        //=============> Done
+  // Icon_user_Login();       //=============> Done
+  Provider_Login()        //=============> Done
 
 
-  // Add_Provider()     //=============> Done
+  // Add_Provider()         //=============> Done
   // Provider_Search()     //=============> Done
   // View_Provider()      //=============> Done
-  // Delete_Provider()    //=============> Done
-  // Assign_Facility()    //=============> Done
+  // Delete_Provider()   //=============> Done
+  // Assign_Facility()  //=============> Done
 
-  // Add_Icon_Exchange_Facilities()  //=============> Done
-  // edit_facility()   //=============> Done
-  // delete_facility()    //=============> Done
-  // Facility_Search()    //=============> Done
+  // Add_Icon_Exchange_Facilities()   //=============> Done
+  // edit_facility()                 //=============> Done
+  // delete_facility()              //=============> Done
+  // Facility_Search()             //=============> Done
 
-  // Update_Icon_user()   //=============> Done
-  // Icon_Users()         //=============> Done
-  // Icon_Users_Search()      //=============> Done
+  // Update_Icon_user()       //=============> Done
+  // Icon_Users()            //=============> Done
+  // Icon_Users_Search()    //=============> Done
 
   // Create_Icon_Roles()      //=============> Done
   // Icon_Role_Search()      //=============> Done
-  // Edit_Roles()         //=============> Done
-  // Delete_Roles()      //=============> Done
+  // Edit_Roles()           //=============> Done
+  // Delete_Roles()        //=============> Done
 
-  // Provider_Signup()   //=============> Done
+  // Provider_Signup()     //=============> Done
   // Provider_SignIN()    //=============> Done
 
-  // Add_Pay_Rates()     //=============> Done
-  // Pay_Rate_Search()      //=============> Done
-  // Pay_Rate_View()      //=============> Done
-  // Edit_Pay_Rate()       //=============> Done
-  // Delete_Pay_Rate()      //=============> Done
+  // Add_Pay_Rates()           //=============> Done
+  // Pay_Rate_Search()        //=============> Done
+  // Pay_Rate_View()         //=============> Done
+  // Edit_Pay_Rate()        //=============> Done
+  // Delete_Pay_Rate()     //=============> Done
 
-  // Add_Malpractice()     //=============> Done
+  // Add_Malpractice()         //=============> Done
   // Malpractice_Search()     //=============> Done
-  // Update_Malpractice();  //=============> Done
+  // Update_Malpractice();   //=============> Done
 
-  // Provider_Expense()   //=============> Done
-  // View_Provider_Expense()   //=============> Done
-  // Edit_Provider_Expense()   //=============> Done
-  // Provider_Expense_Search()    //=============> Done
-  // Provider_condition()    //=============> Done
+  // Provider_Expense()               //=============> Done
+  // View_Provider_Expense()         //=============> Done
+  // Edit_Provider_Expense()        //=============> Done
+  // Provider_Expense_Search()     //=============> Done
+  // Provider_condition()         //=============> Done
 
-  // Admin_Expense()              //=============> Done
-  // View_Admin_Expense()         //=============> Done
+  // Admin_Expense()                    //=============> Done
+  // View_Admin_Expense()              //=============> Done
   // Edit_Admin_Expense()             //=============> Done
-  // admin_Expense_Condition()  //=============> Done
+  // admin_Expense_Condition()       //=============> Done
 
-  // Hours_Completion_Bonus()  //=============> Done
-  // Performance_Bonus()   //=============> Done
-  // Refferal_Bonus()  //=============> Done
-  // Incentive()   //=============> Done
-  // Others_Bonus()    //=============> Done
+  // Hours_Completion_Bonus()    //=============> Done
+  // Performance_Bonus()        //=============> Done
+  // Refferal_Bonus()          //=============> Done
+  // Incentive()              //=============> Done
+  // Others_Bonus()          //=============> Done
 
-  // Timesheet_Reminder()   //=============> Done
-  // Timesheet()      //=============> Done
-  Timesheet_Search()
-  // Pay_Periods()    //=============> Done
+  // Timesheet_Reminder()      //=============> Done
+  // Timesheet()              //=============> Done
+  // Timesheet_Search()      //=============> Done
+  // Pay_Periods()          //=============> Done
 
-   // IC_Notification()    //=============> Done
-  // IC_Hours_Completion_Bonus()  //=============> Done
-  // IC_Performance_Bonus()   //=============> Done
-  // IC_Refferal_Bonus()  //=============> Done
-  // IC_Incentive()   //=============> Done
-  // IC_Others_Bonus()  //=============> Done
-  // IC_Bonus_Condition()   //=============> Done
+   // IC_Notification()                 //=============> Done
+  // IC_Hours_Completion_Bonus()       //=============> Done
+  // IC_Performance_Bonus()           //=============> Done
+  // IC_Refferal_Bonus()             //=============> Done
+  // IC_Incentive()                 //=============> Done
+  // IC_Others_Bonus()             //=============> Done
+  // IC_Bonus_Condition()         //=============> Done
 
-  // Bulk_Facility_Assignment()     //=============> Done
-  // Bulk_add_provider()     //=============> Done
-  // Bulk_Area_of_expertise()     //=============> Done
+  // Bulk_Facility_Assignment()       //=============> Done
+  // Bulk_add_provider()             //=============> Done
+  // Bulk_Area_of_expertise()       //=============> Done
+
+  
 
 
 
+//           ||///////     ||//////    ||\\    ||  ||///////
+//           ||       //   ||    ||    || \\   ||  ||
+//           ||        //  ||    ||    ||  \\  ||  ||/////
+//           ||       //   ||    ||    ||   \\ ||  ||
+//           ||//////      ||//////    ||    \\||  ||///////
+ 
+ 
 
 
 });
