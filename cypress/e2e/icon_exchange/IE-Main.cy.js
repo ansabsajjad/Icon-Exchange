@@ -106,8 +106,9 @@ describe("let's Automate Icon Exchange.", function() {
   // Provider_Expense()   //=============> Done
   // View_Provider_Expense()   //=============> Done
   // Edit_Provider_Expense()   //=============> Done
-  Provider_Expense_Search()    //=============> Done
-  // Provider_condition()
+  // Provider_Expense_Search()    //=============> Done
+  // Provider_condition()    //=============> Done
+  
   // Admin_Expense()              //=============> Done
   // View_Admin_Expense()         //=============> Done
   // Edit_Admin_Expense()             //=============> Done
