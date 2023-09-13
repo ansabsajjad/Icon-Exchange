@@ -62,6 +62,7 @@ import Update_Icon_user from "./Update_Icon_user.cy";
 import Timesheet_Reminder from "./timesheet_reminder.cy";
 import Timesheet from "./Timesheet.cy";
 import Pay_Periods from "./Pay_Periods.cy";
+import Timesheet_Search from "./Timesheet_Search.cy";
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL(); //=============> Done
@@ -122,15 +123,16 @@ describe("let's Automate Icon Exchange.", function() {
 
   // Timesheet_Reminder()   //=============> Done
   // Timesheet()      //=============> Done
+  Timesheet_Search()
   // Pay_Periods()    //=============> Done
 
    // IC_Notification()    //=============> Done
-  IC_Hours_Completion_Bonus()
-  IC_Performance_Bonus()
-  IC_Refferal_Bonus()
-  IC_Incentive()
-  IC_Others_Bonus()
-  IC_Bonus_Condition()
+  // IC_Hours_Completion_Bonus()  //=============> Done
+  // IC_Performance_Bonus()   //=============> Done
+  // IC_Refferal_Bonus()  //=============> Done
+  // IC_Incentive()   //=============> Done
+  // IC_Others_Bonus()  //=============> Done
+  // IC_Bonus_Condition()   //=============> Done
 
   // Bulk_Facility_Assignment()     //=============> Done
   // Bulk_add_provider()     //=============> Done
