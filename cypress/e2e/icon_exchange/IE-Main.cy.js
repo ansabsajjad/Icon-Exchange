@@ -66,8 +66,8 @@ import Pay_Periods from "./Pay_Periods.cy";
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL(); //=============> Done
   // Icon_Admin_Login()     //=============> Done
-  // Icon_user_Login();   //=============> Done
-  Provider_Login()      //=============> Done
+  Icon_user_Login();   //=============> Done
+  // Provider_Login()      //=============> Done
 
 
   // Add_Provider()     //=============> Done
@@ -94,10 +94,10 @@ describe("let's Automate Icon Exchange.", function() {
   // Provider_SignIN()    //=============> Done
 
   // Add_Pay_Rates()     //=============> Done
-  // Pay_Rate_Search()
-  // Pay_Rate_View()
-  // Edit_Pay_Rate()
-  // Delete_Pay_Rate()
+  // Pay_Rate_Search()      //=============> Done
+  // Pay_Rate_View()      //=============> Done
+  // Edit_Pay_Rate()       //=============> Done
+  Delete_Pay_Rate()      //=============> Done
 
   // Add_Malpractice()     //=============> Done
   // Malpractice_Search()     //=============> Done
@@ -108,7 +108,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Edit_Provider_Expense()   //=============> Done
   // Provider_Expense_Search()    //=============> Done
   // Provider_condition()    //=============> Done
-  
+
   // Admin_Expense()              //=============> Done
   // View_Admin_Expense()         //=============> Done
   // Edit_Admin_Expense()             //=============> Done

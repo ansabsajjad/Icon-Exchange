@@ -10,7 +10,7 @@ function Malpractice_Search(){
         cy.get('.left-icon').click({force: true})
         cy.wait(2000)
         cy.get('#malpracticeInsuranceProvider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
 
          cy.get('[data-testid="search"]').click({force:true})
         cy.wait(5000)
@@ -34,7 +34,7 @@ function Malpractice_Search(){
         cy.get('.left-icon').click({force: true})
         cy.wait(2000)
         cy.get('#areaOfExpertise > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
          cy.get('[data-testid="search"]').click({force:true})
         cy.wait(5000)
     
@@ -116,7 +116,7 @@ function Malpractice_Search(){
         cy.get('.left-icon').click({force: true})
   cy.wait(2000)
     cy.get('#createdBy > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(1000)
-  cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+  cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
   cy.get('[data-testid="search"]').click({force:true})
   cy.wait(5000)
 });

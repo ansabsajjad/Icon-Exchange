@@ -13,20 +13,20 @@ it('B-2 Click on add bonus and incentive button.', () => {
 
 it('B- 3 Select Bonus type.', () => {
     cy.get('#bonusType > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
      
 });
 
 
 it('B- 3 Select Provider Name.', () => {
     cy.get('#provider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
 
 });
 
 it('B- 3 Select Facility Name.', () => {
     cy.get('#facility > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+    cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
        
 });
 
@@ -78,13 +78,13 @@ function Performance_Bonus(){
     
     it('B- 3 Select Provider Name.', () => {
         cy.get('#provider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
     
     });
     
     it('B- 3 Select Facility Name.', () => {
         cy.get('#facility > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
            
     });
     
@@ -134,7 +134,7 @@ function Refferal_Bonus(){
     
     it('B- 3 Select Provider Name.', () => {
         cy.get('#provider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
     
     });
     
@@ -194,13 +194,13 @@ function Incentive(){
     
     it('B- 3 Select Provider Name.', () => {
         cy.get('#provider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
     
     });
     
     it('B- 3 Select Facility Name.', () => {
         cy.get('#facility > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
            
     });
     
@@ -247,7 +247,7 @@ function Others_Bonus(){
     
     it('B- 3 Select Provider Name.', () => {
         cy.get('#provider > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click({force:true}).wait(2000)
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
     
     });
         

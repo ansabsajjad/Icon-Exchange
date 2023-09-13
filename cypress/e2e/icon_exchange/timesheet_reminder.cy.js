@@ -13,21 +13,21 @@ function Timesheet_Reminder(){
 
     it('Select Bi-Weekly Notification Type.', () => {
         cy.get('.form-controls > #notificationType > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
     });
 
 
 
     it('Select Pay Period.', () => {
         cy.get('#payPeriodId > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);        
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;        
     });
 
 
 
     it('Select Providers', () => {
         cy.get('#providers > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
  
     });
 
@@ -63,7 +63,7 @@ function Timesheet_Reminder(){
 
     it('Select Pay Period.', () => {
         cy.get('#payPeriodId > .custom-select__control > .custom-select__value-container > .custom-select__input-container').click()
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);        
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;        
     });
 
 

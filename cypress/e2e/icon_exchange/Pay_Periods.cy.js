@@ -9,7 +9,7 @@ function Pay_Periods(){
         cy.get('.left-icon').click()
         cy.wait(2000)
         cy.get('.custom-select__input-container').click()
-        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);
+        cy.get('.custom-select__option:eq(0)').click({force: true}).wait(1000);   /////===============Array Index 0;
         cy.get('[data-testid="search"]').click({force:true})
         cy.wait(5000)
     

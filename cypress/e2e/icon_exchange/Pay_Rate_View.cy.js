@@ -1,23 +1,19 @@
 function Pay_Rate_View(){
 
-    it('PV-1 Click on Settings.', () => {
-        cy.get('[data-testid="mainmenu-4"] > .float-end').click({force: true}).wait(4000)
+    it('AP -1 Click on Provider Rates.', () => {
+        cy.get('[data-testid="mainmenu-providers"]').click()
+        cy.get('[data-testid="submenu-provider-rates"]').click()
         expect(true).to.equal(true)
-        });
-
-        it('PV-2 Click on Pay rates. ', () => {
-            cy.get('[data-testid="submenu-4"]').click({force: true})
-            cy.wait(3000)
-        });
-
+    });
+  
 
         it('PV-3 Scroll Listing to the Right Side. ', () => {
-            cy.get('.scroll-table').scrollTo('right',{ duration: 2000 }).wait(2000)
+            cy.get('.scroll-table').scrollTo('right',{ duration: 3000 }).wait(2000)
         });
 
 
         it('PV-4 Click on 3 dots. ', () => {
-            cy.get(':nth-child(1) > :nth-child(12) > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force: true}).wait(2000)
+            cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force: true}).wait(2000)
         });
 
 
@@ -28,12 +24,12 @@ function Pay_Rate_View(){
 
 
         it('PV-6 Scroll to Bottom. ', () => {
-            cy.scrollTo('bottom',{ duration: 2000 }).wait(2000)
+            cy.scrollTo('bottom',{ duration: 5000 }).wait(2000)
            });
 
 
            it('PV-7 Scroll to Top. ', () => {
-            cy.scrollTo('top',{ duration: 2000 }).wait(2000)
+            cy.scrollTo('top',{ duration: 5000 }).wait(2000)
            });
 
 
