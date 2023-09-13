@@ -67,8 +67,10 @@ describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL(); //=============> Done
   // Icon_Admin_Login()     //=============> Done
   // Icon_user_Login();   //=============> Done
+  Provider_Login()      //=============> Done
 
-  Add_Provider()     //=============> Done
+
+  // Add_Provider()     //=============> Done
   // Provider_Search()     //=============> Done
   // View_Provider()      //=============> Done
   // Delete_Provider()    //=============> Done
@@ -88,8 +90,8 @@ describe("let's Automate Icon Exchange.", function() {
   // Edit_Roles()         //=============> Done
   // Delete_Roles()      //=============> Done
 
-  Provider_Signup()   //=============> Done
-  Provider_SignIN()    //=============> Done
+  // Provider_Signup()   //=============> Done
+  // Provider_SignIN()    //=============> Done
 
   // Add_Pay_Rates()     //=============> Done
   // Pay_Rate_Search()
@@ -101,7 +103,6 @@ describe("let's Automate Icon Exchange.", function() {
   // Malpractice_Search()     //=============> Done
   // Update_Malpractice();  //=============> Done
 
-  Provider_Login()
   Provider_Expense()
   // View_Provider_Expense()
   // Edit_Provider_Expense()
@@ -132,9 +133,9 @@ describe("let's Automate Icon Exchange.", function() {
   // IC_Others_Bonus()
   // IC_Bonus_Condition()
 
-  // Bulk_Facility_Assignment()
-  // Bulk_add_provider()
-  // Bulk_Area_of_expertise()
+  // Bulk_Facility_Assignment()     //=============> Done
+  // Bulk_add_provider()     //=============> Done
+  // Bulk_Area_of_expertise()     //=============> Done
 
 
 

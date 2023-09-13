@@ -1,4 +1,4 @@
-import Provider_data from "../../fixtures/Icon Exchange Credentials/Provider_Data.cy";
+import {Super_Admin_data, Icon_User_data,  Provider_data} from "../../fixtures/Icon Exchange Credentials/Login_Credentials.cy";
 import Random_Textt from "./Random_Text";
 
 function Add_Provider() {

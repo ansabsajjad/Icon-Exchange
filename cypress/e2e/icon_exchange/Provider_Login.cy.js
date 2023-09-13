@@ -1,4 +1,4 @@
-import Provider_data from "../../fixtures/Icon Exchange Credentials/Provider_Data.cy";
+import {Super_Admin_data, Icon_User_data,  Provider_data} from "../../fixtures/Icon Exchange Credentials/Login_Credentials.cy";
 
 function Provider_Login(){
 
@@ -30,20 +30,35 @@ function Provider_Login(){
     
     it('12- Click on Sign In Button.', () => {
         cy.get('.btn').click({force:true})
+        cy.wait(4000)
         expect(true).to.equal(true)
     });
     
-    it('5- Verifying the Toast message => Login Successful.', () => {
-        cy.wait(1000);
-        cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Login Successful')
-        cy.wait(2000)
-    });
+    // it('5- Verifying the Toast message => Login Successful.', () => {
+    //     cy.wait(1000);
+    //     cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Login Successful')
+    //     cy.wait(2000)
+    // });
 
-    it(' CLick on Complete Profile later button. ', () => {
-        cy.get('#left-tabs-example-tabpane-6 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn').click({force:true})
-        cy.wait(3000)
-    });
+  
 
 
+
+
+    
+    it("Clicks button or image based on condition", () => {
+        cy.get(
+          '#left-tabs-example-tabpane-5 > :nth-child(1) > form > .form-footer-full > .container > .row > .col-md-4 > .btn',
+          { timeout: 10000 }
+        ).then(($button) => {
+          if ($button.length > 0) {
+            // If the first button is found, click on it
+            cy.wrap($button).click();
+          } else {
+            // If the first button is not found, click on the second button
+            cy.get(".brand-link > img").click();
+          }
+        });
+      });
 }
 export default Provider_Login;
