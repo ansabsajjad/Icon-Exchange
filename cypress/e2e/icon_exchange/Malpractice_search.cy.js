@@ -112,8 +112,6 @@ function Malpractice_Search(){
     
     });
 
-    
-
     it('Search by Created By', () => {
         cy.get('.left-icon').click({force: true})
   cy.wait(2000)
