@@ -1,58 +1,58 @@
 
 function Edit_Provider_Expense(){
 
-    it('Click Expenses. ', () => {
-        cy.get('.ml-4').click({force:true})
+    it('EX- Click Expenses. ', () => {
+        cy.get('[data-testid="mainmenu-expenses"]').click({force:true}).wait(2000)
     });
 
-
 it('Scroll to right side.', () => {
-    cy.get('.scroll-table').scrollTo('right',{ duration: 2000 }).wait(2000)
+    cy.get('.scroll-table').scrollTo('right',{ duration: 2000 },{ensureScrollable: false}).wait(2000)
 });
 
 
 it('Click on 3 dots.', () => {
-    cy.get(':nth-child(1) > :nth-child(6) > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true}).wait(2000)
+    cy.get(':nth-child(1) > .stickycolumn > .table-dropdown > #dropdown-basic > .icon-Vertical-Dots').click({force:true}).wait(2000)
 });
 
 it(' Click on Edit button.', () => {
-    cy.contains('Edit').click({force: true}).wait(4000)
+    cy.get('[data-testid="edit-expense"]').click({force: true}).wait(4000)
 });
 
 
+
 it('EX- Select Facility  Name.', () => {
-    cy.get('[id="react-select-16-input"]').click({force:true}).wait(2000)
-cy.get('#react-select-16-option-1').click({force: true})   /////===============Array Index 0
-cy.wait(2000)
+    cy.get('.custom-select__input-container').click().wait(2000)
+    cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);  /////===============Array Index 0
 
 });
 
 
 it('EX- Select Expense Type.', () => {
-    cy.get('[id="react-select-17-input"]').click({force:true}).wait(2000)
-cy.get('#react-select-17-option-1').click({force: true})   /////===============Array Index 0
-cy.wait(2000)
+    cy.get('[id="expenses.0.expenseType"]').click().wait(2000)
+    cy.get(".custom-select__option:eq(1)").click({ force: true }).wait(1000);   /////===============Array Index 0
+    cy.wait(2000)
 
 });
 
 
 it('EX- Enter Total Amount.', () => {
-    cy.get('[data-testid="expenses.0.totalAmount"]').clear().type("50")
+    cy.get('[data-testid="expenses.0.totalAmount"]').type("200")
 });
 
-
 it('EX- Enter Expense Start Date. ', () => {
-    cy.get('[name="expenses.0.expenseSpentStartDate"]').click({force:true}).type("05/19/2023 - 05/21/2023")
+    cy.get('#rangeSelect').click().wait(1000)
+    cy.get('[name="expenses.0.expenseSpentStartDate"]').click({force:true}).type("09/16/2023 - 09/28/2023")
 });
 
 
 it('EX- Enter Description.', () => {
-    cy.get('[name="expenses.0.description"]').type("This is description.")
+    cy.get('[name="expenses.0.description"]').type("This is updated description.")
 });
 
 
 it('Click on Update button.', () => {
-     cy.get('[data-testid="createbtn"]').click({force:true})
+    cy.get('[data-testid="save-expense"]').click({force:true})
+    cy.get('.Toastify__toast-body > :nth-child(2)',{timeout: 10000}).should('be.visible').should('have.text','Expense has been updated successfully')
 });
 
 
