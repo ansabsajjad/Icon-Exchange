@@ -36,7 +36,7 @@ it('EX- Select Expense Type.', () => {
 
 
 it('EX- Enter Total Amount.', () => {
-    cy.get('[data-testid="expenses.0.totalAmount"]').type("200")
+    cy.get('[data-testid="expenses.0.totalAmount"]').clear().type("200")
 });
 
 it('EX- Enter Expense Start Date. ', () => {
