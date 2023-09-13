@@ -8,29 +8,28 @@ function Provider_Expense(){
     // });
 
 
-    it('EX-7 Click Expenses. ', () => {
-        cy.get('.ml-4').click({force:true})
+    it('EX- Click Expenses. ', () => {
+        cy.get('[data-testid="mainmenu-expenses"]').click({force:true}).wait(2000)
     });
 
 
     it('EX-Click on Add Expense. ', () => {
-        cy.get('.px-5').click({force:true})
+        cy.get('[data-testid="add-expense"]').click({force:true})
         cy.wait(5000)
     });
 
 
     it('EX- Select Facility  Name.', () => {
-        cy.get('[id="react-select-14-input"]').click({force:true}).wait(2000)
-    cy.get('#react-select-14-option-0').click({force: true})   /////===============Array Index 0
-    cy.wait(2000)
+        cy.get('.custom-select__input-container').click({force:true}).wait(2000)
+        cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);  /////===============Array Index 0
 
     });
 
 
     it('EX- Select Expense Type.', () => {
-        cy.get('[id="react-select-15-input"]').click({force:true}).wait(2000)
-    cy.get('#react-select-15-option-0').click({force: true})   /////===============Array Index 0
-    cy.wait(2000)
+        cy.get('[id="expenses.0.expenseType"]').click().wait(2000)
+        cy.get(".custom-select__option:eq(0)").click({ force: true }).wait(1000);   /////===============Array Index 0
+        cy.wait(2000)
 
     });
 
@@ -41,7 +40,8 @@ function Provider_Expense(){
 
 
     it('EX- Enter Expense Start Date. ', () => {
-        cy.get('[name="expenses.0.expenseSpentStartDate"]').click({force:true}).type("04/19/2023 - 04/21/2023")
+        cy.get('#rangeSelect').click().wait(1000)
+        cy.get('[name="expenses.0.expenseSpentStartDate"]').click({force:true}).type("09/06/2023 - 09/22/2023")
     });
 
 
@@ -49,9 +49,9 @@ function Provider_Expense(){
         cy.get('[name="expenses.0.description"]').type("This is description.")
     });
     it('Ex- Upload Attahment.', () => {
-        cy.get('.btn-browse').click({force:true})
+        cy.get('[data-testid="browsebtn"]').click({force:true})
         const filepath11 = "a11.jpg"
-        cy.get('.btn-browse').attachFile(filepath11,{subjectType: 'drag-n-drop'})
+        cy.get('[data-testid="browsebtn"]').attachFile(filepath11,{subjectType: 'drag-n-drop'})
         cy.wait(5000)
     });
 
@@ -60,40 +60,44 @@ function Provider_Expense(){
 
 
     it('EX- Click on Add more.', () => {
-        cy.get('.addmore').click({force:true}).wait(3000)
+        cy.get('[data-testid="addmorebtn"]').click({force:true}).wait(3000)
     });
 
-
-    it('EX-Slect Expense Type. ', () => {
-        cy.get('[id="react-select-16-input"]').click({force:true}).wait(2000)
-        cy.get('#react-select-16-option-0').click({force: true})   /////===============Array Index 0
+    it('EX- Select Expense Type.', () => {
+        cy.get('[id="expenses.1.expenseType"]').click().wait(2000)
+        cy.get(".custom-select__option:eq(1)").click({ force: true }).wait(1000);   /////===============Array Index 0
         cy.wait(2000)
+
     });
 
 
-    it('EX- Enter total amount. ', () => {
-        cy.get('[data-testid="expenses.1.totalAmount"]').click({force:true}).type("56")
+    it('EX- Enter Total Amount.', () => {
+        cy.get('[data-testid="expenses.1.totalAmount"]').type("20")
     });
 
 
-    it('EX- Enter Expense Spent date. ', () => {
-        cy.get('[name="expenses.1.expenseSpentStartDate"]').click({force:true}).type("05/22/2023 - 05/25/2023")
+    it('EX- Enter Expense Start Date. ', () => {
+        cy.get('#rangeSelect').click().wait(1000)
+        cy.get('[name="expenses.1.expenseSpentStartDate"]').click({force:true}).type("09/08/2023 - 09/20/2023")
     });
 
 
     it('EX- Enter Description.', () => {
-        cy.get('[name="expenses.1.description"]').type("This is description.")
+        cy.get('[name="expenses.1.description"]').type("This is computer generated description.")
     });
     it('Ex- Upload Attahment.', () => {
-        cy.get(':nth-child(3) > .row > .col-md-12 > .form-group > .dropzone > .global-file-style > .d-flex > :nth-child(2) > .btn-browse').click({force:true})
+        cy.get(':nth-child(3) > .row > :nth-child(5) > .form-group > .dropzone > .global-file-style > .d-flex > :nth-child(2) > [data-testid="browsebtn"]').click()
         const filepath11 = "a11.jpg"
-        cy.get(':nth-child(3) > .row > .col-md-12 > .form-group > .dropzone > .global-file-style > .d-flex > :nth-child(2) > .btn-browse').attachFile(filepath11,{subjectType: 'drag-n-drop'})
+        cy.get(':nth-child(3) > .row > :nth-child(5) > .form-group > .dropzone > .global-file-style > .d-flex > :nth-child(2) > [data-testid="browsebtn"]').attachFile(filepath11,{subjectType: 'drag-n-drop'})
         cy.wait(5000)
     });
 
+
+
+
     it('EX- Click on Create button. ', () => {
         // cy.wait(30000)
-         cy.get('[data-testid="createbtn"]').click({force:true})
+        cy.get('[data-testid="save-expense"]').click({force:true})
     });
     
     it('EX- ', () => {
