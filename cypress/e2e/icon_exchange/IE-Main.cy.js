@@ -79,7 +79,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Add_Icon_Exchange_Facilities()  //=============> Done
   // edit_facility()   //=============> Done
   // delete_facility()    //=============> Done
-  Facility_Search()    //=============> Done
+  // Facility_Search()    //=============> Done
 
   // Update_Icon_user()   //=============> Done
   // Icon_Users()         //=============> Done
@@ -124,15 +124,13 @@ describe("let's Automate Icon Exchange.", function() {
   // Timesheet()      //=============> Done
   // Pay_Periods()    //=============> Done
 
-  // Icon_user_per_Login()
- 
-  // IC_Notification()
-  // IC_Hours_Completion_Bonus()
-  // IC_Performance_Bonus()
-  // IC_Refferal_Bonus()
-  // IC_Incentive()
-  // IC_Others_Bonus()
-  // IC_Bonus_Condition()
+   // IC_Notification()    //=============> Done
+  IC_Hours_Completion_Bonus()
+  IC_Performance_Bonus()
+  IC_Refferal_Bonus()
+  IC_Incentive()
+  IC_Others_Bonus()
+  IC_Bonus_Condition()
 
   // Bulk_Facility_Assignment()     //=============> Done
   // Bulk_add_provider()     //=============> Done
