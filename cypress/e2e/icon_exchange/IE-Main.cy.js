@@ -63,12 +63,15 @@ import Timesheet_Reminder from "./timesheet_reminder.cy";
 import Timesheet from "./Timesheet.cy";
 import Pay_Periods from "./Pay_Periods.cy";
 import Timesheet_Search from "./Timesheet_Search.cy";
+import { Payment } from "./Payment.cy";
+import { Payment_Recalculate } from "./Payment_Recalculate.cy";
+import { Payment_Search } from "./Payment_Search.cy";
 
 describe("let's Automate Icon Exchange.", function() {
   Icon_Exchange_URL();          //=============> Done
-  // Icon_Admin_Login()        //=============> Done
+  Icon_Admin_Login()        //=============> Done
   // Icon_user_Login();       //=============> Done
-  Provider_Login()        //=============> Done
+  // Provider_Login()        //=============> Done
 
 
   // Add_Provider()         //=============> Done
@@ -121,10 +124,15 @@ describe("let's Automate Icon Exchange.", function() {
   // Incentive()              //=============> Done
   // Others_Bonus()          //=============> Done
 
-  // Timesheet_Reminder()      //=============> Done
-  // Timesheet()              //=============> Done
-  // Timesheet_Search()      //=============> Done
-  // Pay_Periods()          //=============> Done
+  // Timesheet_Reminder()          //=============> Done
+  // Timesheet()                  //=============> Done
+  // Timesheet_Search()          //=============> Done
+  // Pay_Periods()              //=============> Done
+  // Payment()                 //=============> Done
+  // Payment_Recalculate()    //=============> Done
+  Payment_Search()           //=============> Done
+
+
 
    // IC_Notification()                 //=============> Done
   // IC_Hours_Completion_Bonus()       //=============> Done
