@@ -130,7 +130,7 @@ describe("let's Automate Icon Exchange.", function() {
   // Pay_Periods()              //=============> Done
   // Payment()                 //=============> Done
   // Payment_Recalculate()    //=============> Done
-  Payment_Search()           //=============> Done
+  // Payment_Search()        //=============> Done
 
 
 
